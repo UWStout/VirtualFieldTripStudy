@@ -1,28 +1,47 @@
-website: https://olliebrown.github.io
-basewebsite: /ThermoTourTutor
-permalink: date
+# site settings
+title: Thermodynamics Virtual Tour Tutor
+subtitle: '[An Xcel Energy Foundation Grant Recipient]'
+copyright: UWStout Thermodynamics Virtual Tour Project
+email: berriers@uwstout.edu
+description: Virtual tour thermodynamics tour
+baseurl: "/ThermoTourTutor"
+url: https://olliebrown.github.io
+author: Seth Berrier, Oai Ha, Keif Oss
+# street_address: 1234 Somewhere Road
+# city: Nashville
+# state: TN
+# zip_code: 55555
+# country: United States of America
+# phone: (716) 555-5555
 
-collections:
-  authors:
-    output: true
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 10
 
-defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+# social settings (key must match name of font awesome icon)
+# see https://fontawesome.com/icons?d=gallery&p=2&s=brands
+# Icons are not shown if value is empty
+# You need to restart jekyll for changes to have an effect
+socials:
+  GitHub: https://github.com/UWStout
+  GitLab:
+  Google-Plus:
+  Instagram:
+  LinkedIn:
+  Twitter:
+  Facebook:
+  Slack:
 
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
+
+exclude:
+- "*.gemspec"
+- LICENSE.md
+- CONTRIBUTING.md
+- README.md
+- old-tutorial-stuff
+
