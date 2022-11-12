@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: tourPage
 title: 3 Steam Turbine
 description: Theories about steam turbines
 image: assets/images/Boiler3-4-View

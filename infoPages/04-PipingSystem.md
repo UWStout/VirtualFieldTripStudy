@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: tourPage
 title: 4 Piping System
 description: The piping system distributes the heating/chilling medium
 image: assets/images/Piping

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: tourPage
 title: 5 Economizer
 description: Recapturing some energy before it leaves the plant
 image: assets/images/Boiler4-Closeup

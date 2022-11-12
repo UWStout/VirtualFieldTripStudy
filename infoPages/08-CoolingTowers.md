@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: tourPage
 title: 8 Cooling Towers
 description: Releasing the captured heat in the refrigeration cycle
 image: assets/images/CoolingTower-Exterior

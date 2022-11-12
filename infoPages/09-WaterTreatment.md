@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: tourPage
 title: 9 Water Treatment
 description: Preparation of the water used throughout the plant
 image: assets/images/WaterTreatment

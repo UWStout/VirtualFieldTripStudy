@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: tourPage
 title: 10 Personnel/Engineers in the Plant
 description: The workers keeping the plant running
 image: assets/images/ControlRoom

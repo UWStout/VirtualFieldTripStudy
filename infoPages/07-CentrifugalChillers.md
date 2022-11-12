@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: tourPage
 title: 7 Centrifugal Chillers
 description: The essential mechanism of the chilling plant
 image: assets/images/Chillers
