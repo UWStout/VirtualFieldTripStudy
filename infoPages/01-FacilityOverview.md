@@ -4,20 +4,10 @@ title: 1 Facility Overview
 description: Introducing the central heating and chilling plant
 image: assets/images/HeatingPlant-Closeup
 nav-menu: true
-tourPano:
+learning:
+  title: 'Explore The Central Heating/Chilling Plant'
+  description: 'Click below to explore the plant freely.'
   buttonText: 'Tour The Entire Plant'
+tourPano:
+  enable: true
 ---
-## Introduction
-
-Welcome info and audio
-
-Link to the tour
-
-Images
-
-## History of District Heating
-
-Audio script
-
-Images
-
