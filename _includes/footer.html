@@ -37,15 +37,14 @@
 <script src="{{ "assets/js/virtualTour.js" | absolute_url }}"></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    // Was a specific starting room requested?
-    const queryString = window.location.search
-    const urlParams = new URLSearchParams(queryString)
-
     // Build enabled room array
     const enabledRooms = [
     // {% for room in include.page.tourPano.enabledRooms %}
       '{{ room }}',
     // {% endfor %}
+    // {% if include.page.tourPano.startRoom %}
+      '{{ include.page.tourPano.startRoom }}'
+    // {% endif %}
     ].filter(element => !!element)
 
     // Build enabled hotSpot
@@ -63,6 +62,66 @@
       enabledRooms, enabledHotSpots,
       'lightgrey', '#2a2f4a'
     )
+  })
+</script>
+{% endif %}
+
+{% if include.page.assessment %}
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Get references to needed elements
+    const navHeaderElement = document.getElementById('header')
+    const closeButton = document.getElementById('overlayCloseButton')
+
+    // Setup the close button
+    closeButton.addEventListener('click', e => {
+      e.preventDefault()
+
+      // Hide any and all overlays
+      const overlays = document.getElementsByClassName('floatingOverlay')
+      for (var i = 0; i < overlays.length; i++) {
+        const overlay = overlays.item(i)
+        overlay.style.width = '0px'
+        overlay.style.height = '0px'
+      }
+
+      // Hide close button and restore scroll bars
+      closeButton.style.display = 'none'
+      document.body.style.overflow = 'auto'
+    })
+
+  // {% for form in page.assessment.forms %}
+    const formButton = document.getElementById('form-{{ form.ID }}-button')
+    formButton.addEventListener('click', e => {
+      e.preventDefault()
+
+      // Show the close button
+      closeButton.style.display = 'block'
+
+      // Get reference to iFrame
+      const iFrameElement = document.getElementById('form-{{ form.ID }}-frame')
+
+      // Show the form element
+      const rootFormElement = document.getElementById('form-{{ form.ID }}-root')
+      rootFormElement.scrollIntoView(true)
+      document.body.style.overflow = 'hidden'
+
+      // Make fullscreen
+      rootFormElement.style.width = '100%'
+      rootFormElement.style.height = '100%'
+
+      // Is this the first time opening it?
+      if (iFrameElement.src === '') {
+        // Adjust below the navbar
+        rootFormElement.style.top = `${navHeaderElement.offsetHeight}px`
+
+        // Wait a moment, then set src of the iframe (if not already set)
+        setTimeout(() => {
+          iFrameElement.src = "https://forms.office.com/r/{{ form.ID }}"
+        }, 100)
+      }
+    })
+  // {% endfor %}
   })
 </script>
 {% endif %}

@@ -1,6 +1,6 @@
 ---
 layout: tourPage
-title: 10 Personnel/Engineers in the Plant
+title: Plant Personnel
 description: The workers keeping the plant running
 image: assets/images/ControlRoom
 nav-menu: true

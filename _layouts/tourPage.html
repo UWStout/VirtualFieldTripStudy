@@ -3,7 +3,8 @@
 Forty by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
---><html>
+-->
+<html>
 
   {% include head.html page=page %}
 
@@ -34,24 +35,18 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             <hr class="divider" />
           {% endif %}
 
+          {{ content }}
+
           {% if page.assessment %}
+            <hr class="divider" />
             <h2 id="assessments">{{ page.assessment.title }}</h2>
             <p>{{ page.assessment.description }}</p>
-            {% for formID in page.assessment.formIDs %}
-              <iframe
-                id="{{ formID }}-frame"
-                src="https://forms.office.com/r/{{ formID }}"
-                style="overflow: auto; width: 100%; height: 800px;"
-                sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads"
-                frameborder="0"
-                allowfullscreen=""
-              >
-              </iframe>
+            {% for form in page.assessment.forms %}
+              <button id="form-{{ form.ID }}-button" class="button big fit">
+                {{ form.text | default: "Take Quiz" }}
+              </button>
             {% endfor %}
-            <hr class="divider" />
           {% endif %}
-
-          {{ content }}
 
         </div>
       </section>
@@ -59,7 +54,24 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
     </div>
 
     {% if page.tourPano %}
-      <div id="panoTourRoot" class="tourRoot"></div>
+      <div id="panoTourRoot" class="floatingOverlay"></div>
+    {% endif %}
+
+    {% if page.assessment %}
+      <a href="#" class="button" id="overlayCloseButton">Close</a>
+      {% for form in page.assessment.forms %}
+        <div id="form-{{ form.ID }}-root" class="floatingOverlay">
+          <iframe
+            id="form-{{ form.ID }}-frame"
+            data-form-id="{{ form.ID }}"
+            style="overflow: auto; width: 100%; height: 800px;"
+            sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads"
+            frameborder="0"
+            allowfullscreen=""
+          >
+          </iframe>
+        </div>
+      {% endfor %}
     {% endif %}
 
     {% include footer.html page=page %}

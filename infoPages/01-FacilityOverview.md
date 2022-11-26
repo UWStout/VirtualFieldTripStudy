@@ -1,6 +1,6 @@
 ---
 layout: tourPage
-title: 1 Facility Overview
+title: Facility Overview
 description: Introducing the central heating and chilling plant
 image: assets/images/HeatingPlant-Closeup
 nav-menu: true

@@ -1,6 +1,6 @@
 ---
 layout: tourPage
-title: 6 Mixing Chamber & Holding Tank
+title: Mixing/Holding Tanks
 description: The key structures in the water-tube boilers
 image: assets/images/Boiler3-Back
 nav-menu: true

@@ -1,6 +1,6 @@
 ---
 layout: tourPage
-title: 9 Water Treatment
+title: Water Treatment
 description: Preparation of the water used throughout the plant
 image: assets/images/WaterTreatment
 nav-menu: true

@@ -1,6 +1,6 @@
 ---
 layout: tourPage
-title: 5 Economizer
+title: Economizer
 description: Recapturing some energy before it leaves the plant
 image: assets/images/Boiler4-Closeup
 nav-menu: true

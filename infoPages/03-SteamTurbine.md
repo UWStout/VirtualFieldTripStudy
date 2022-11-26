@@ -1,6 +1,6 @@
 ---
 layout: tourPage
-title: 3 Steam Turbine
+title: Steam Turbines
 description: Theories about steam turbines
 image: assets/images/Boiler3-4-View
 nav-menu: true
