@@ -36,6 +36,6 @@ Boiler 1 was a D-type water-tube boiler produced by English Boiler in 1953. It w
 
 ## Liquid-vapor saturation curve of water
 
-<span class="image right"><img src="{% link assets/panoMedia/infoImages/liquidVaporSaturationCurve-Graph.png %}" alt="" /></span>
+<span class="image right"><img src="{% link assets/panoMedia/infoImages/LiquidVaporSaturationCurve-Graph.png %}" alt="" /></span>
 The saturated temperature of steam varies with the boiler pressure at which water is heated. The saturated temperature rises when pressure is increased, and the temperature goes down when pressure is decreased. For example, the saturated temperature of the steam is 212 degrees Fahrenheit at the atmospheric pressure of 14.7 psi. This state of steam is represented by point A on a diagram called the Liquid-vapor saturation curve of water. Inside the boiler, where the pressure is set at 114.7 psi, the temperature of saturated steam increases to 338 degrees Fahrenheit at point B.
 <div style="clear: both"></div>

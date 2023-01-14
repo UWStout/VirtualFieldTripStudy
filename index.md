@@ -9,7 +9,7 @@ show_tile: false
 ---
 
 In Spring of 2022, UW Stout professors Oai Ha, Keif Oss, and Seth Berrier started
-a research project to explore how a virtual of the campus central heating plant could
+a research project to explore how a virtual tour of the campus central heating plant could
 help enhance learning outcomes in an undergraduate course in thermodynamics. This site
 is the ongoing work of that project and will provide a way to explore the central
 heating plan on the Stout campus and to learn about and asses basic thermodynamics

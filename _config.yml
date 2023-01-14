@@ -3,7 +3,7 @@ title: Thermodynamics Virtual Tour Tutor
 subtitle: '[An Xcel Energy Foundation Grant Recipient]'
 copyright: UWStout Thermodynamics Virtual Tour Project
 email: berriers@uwstout.edu
-description: Virtual tour thermodynamics tour
+description: Virtual tour thermodynamics tutor
 baseurl: "/ThermoTourTutor"
 url: https://olliebrown.github.io
 author: Seth Berrier, Oai Ha, Keif Oss
@@ -16,7 +16,7 @@ author: Seth Berrier, Oai Ha, Keif Oss
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 10
+tiles-count: 4
 
 # social settings (key must match name of font awesome icon)
 # see https://fontawesome.com/icons?d=gallery&p=2&s=brands
@@ -44,4 +44,4 @@ exclude:
 - CONTRIBUTING.md
 - README.md
 - old-tutorial-stuff
-
+- _disabled
