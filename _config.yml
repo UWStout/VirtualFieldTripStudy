@@ -1,9 +1,9 @@
 # site settings
-title: Thermodynamics Virtual Tour Tutor
+title: Thermodynamics Virtual Field Trip
 subtitle: '[An Xcel Energy Foundation Grant Recipient]'
-copyright: UWStout Thermodynamics Virtual Tour Project
+copyright: UWStout Thermodynamics Virtual Field Trip Project
 email: berriers@uwstout.edu
-description: Virtual tour thermodynamics tutor
+description: Virtual field trip for learning thermodynamics
 baseurl: "/ThermoTourTutor"
 url: https://olliebrown.github.io
 author: Seth Berrier, Oai Ha, Keif Oss
