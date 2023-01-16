@@ -91,6 +91,7 @@
     })
 
   // {% for form in page.assessment.forms %}
+  {
     const formButton = document.getElementById('form-{{ form.ID }}-button')
     formButton.addEventListener('click', e => {
       e.preventDefault()
@@ -108,7 +109,7 @@
 
       // Make fullscreen
       rootFormElement.style.width = '100%'
-      rootFormElement.style.height = '100%'
+      rootFormElement.style.height = `calc(100vh - ${navHeaderElement.offsetHeight}px)`
 
       // Is this the first time opening it?
       if (iFrameElement.src === '') {
@@ -117,10 +118,15 @@
 
         // Wait a moment, then set src of the iframe (if not already set)
         setTimeout(() => {
-          iFrameElement.src = "https://forms.office.com/r/{{ form.ID }}"
+          if ("{{form.ID}}".length > 10) {
+            iFrameElement.src = "https://forms.office.com/pages/responsepage.aspx?id={{ form.ID }}&embed=true"
+          } else {
+            iFrameElement.src = "https://forms.office.com/r/{{ form.ID }}"
+          }
         }, 100)
       }
     })
+  }
   // {% endfor %}
   })
 </script>

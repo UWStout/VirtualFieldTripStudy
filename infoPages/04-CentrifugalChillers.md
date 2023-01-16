@@ -2,19 +2,46 @@
 layout: tourPage
 title: Centrifugal Chillers
 description: The essential mechanism of the chilling plant
+prevLink: 'infoPages/03-SteamTurbine.html'
 image: assets/images/Chillers
 nav-menu: true
+learning:
+  title: 'Chiller Plant Tour'
+  description: >
+    Click below to explore the chiller side of the central plant and
+    learn more about centrifugal chillers and the refrigeration cycle
+    they employ.
+  buttonText: 'Learn about the chillers'
+  hotspots:
+    - 'One on the door to your left in the first room'
+    - 'One on the end cap of the first chiller (chiller #3)'
+    - 'One in the space between chiller 3 and 2'
+assessment:
+  title: 'What Have You Learned'
+  description: 'Take the quiz below to show what you have learned'
+  forms:
+    - ID: 'o4Eat5UvgUObicYjQ6ZgUhBH9HhOC8lPtzEqifJT6clUOUNGQU1FNFhMRTBLREc1RENEOUwyREtLQy4u'
+      text: 'Refrigeration Cycles Quiz'
+tourPano:
+  startRoom: '1S04_20'
+  enabledRooms:
+    - '1S04_20' # Entrance
+    - '1S05_22' # Chiller 3
+    - '1S05_21'
+    - '1S05_10'
+    - '1S05_00' # Chiller 2
+    - '1S05_11'
+    - '1N05_21'
+    - '1N05_10' # Chiller 1
+    - '1N05_11'
+    - '1N05_01'
+  enabledHotSpots:
+    - '1S05_Chiller_General'
+    - '1S05_Chiller_HX'
+    - '1S05_Chiller_Operation'
 ---
 ## Introduction
-
-Welcome info and audio
-
-Link to the tour
-
-Images
+Attached to the heating plant is the central chiller plant that has been operating since 2007, consisting of three 800 Ton chillers. These highly efficient, industrial-grade units, provide chilled water to 20 buildings on the campus through over ten thousand feet of insulated underground piping.
 
 ## Cycle of Refrigeration
-
-Audio script
-
-Images
+The chillers use a refrigeration cycle to remove heat from water that has circulated through buildings on campus. Refrigerant is used to chill this water before it is circulated enabling more heat to be extracted. The refrigerant undergoes a state change from liquid to gas as it extracts the heat from the primary water circuit. It is then itself cooled by a secondary water circuit that flows through cooling towers on the roof of the building. This condenses the refrigerant back into a liquid and the cycle begins again.

@@ -7,12 +7,8 @@ image: null
 author: null
 show_tile: false
 ---
+Welcome to the beta version of the Thermodynamic Virtual Heating Plant Tour at UW Stout. The four sections
+shown below should be visited in order. Each section will have a 'previous', 'home', and 'next' button at
+the bottom to proceed through in order. You can also access any page from the MENU button in the upper-right.
 
-In Spring of 2022, UW Stout professors Oai Ha, Keif Oss, and Seth Berrier started
-a research project to explore how a virtual tour of the campus central heating plant could
-help enhance learning outcomes in an undergraduate course in thermodynamics. This site
-is the ongoing work of that project and will provide a way to explore the central
-heating plan on the Stout campus and to learn about and assess basic thermodynamics
-concepts demonstrated in the plant.
-
-This work is funded by a grant from the [Xcel Energy Foundation](https://wi.my.xcelenergy.com/s/community/foundation){:target="_blank"}
+Click the first section "Facility Overview" to begin!

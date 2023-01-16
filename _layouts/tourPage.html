@@ -5,10 +5,10 @@ html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-
   {% include head.html page=page %}
 
     <body>
+    <script type="text/javascript">document.body.classList.add("is-loading");</script>
 
     {% include header.html page=page %}
 
@@ -26,19 +26,35 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             <span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}.png" alt=""/></span>
           {% endif %}
 
-          {% if page.learning %}
+          {{ content }}
+        </div>
+      </section>
+
+      {% if page.learning %}
+      <!-- Two -->
+      <section id="two">
+        <div class="inner">
             <h2 id="tour">{{ page.learning.title }}</h2>
             <p>{{ page.learning.description }}</p>
-            <button id="panoTourButton" class="tourButton button big fit icon fa-panorama">
+            <button id="panoTourButton" class="tourButton button big fit icon fa-vr-cardboard">
               {{ page.learning.buttonText | default: "Start Tour" }}
             </button>
-            <hr class="divider" />
-          {% endif %}
+            {% if page.learning.hotspots %}
+            <p style="margin-top: 20px; margin-bottom: 8px;">Look for the following Hotspots:</p>
+            <ul>
+              {% for hotspotText in page.learning.hotspots %}
+              <li>{{ hotspotText }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+      </section>
+      {% endif %}
 
-          {{ content }}
-
-          {% if page.assessment %}
-            <hr class="divider" />
+      {% if page.assessment %}
+      <!-- Three -->
+      <section id="three">
+        <div class="inner">
             <h2 id="assessments">{{ page.assessment.title }}</h2>
             <p>{{ page.assessment.description }}</p>
             {% for form in page.assessment.forms %}
@@ -46,8 +62,40 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 {{ form.text | default: "Take Quiz" }}
               </button>
             {% endfor %}
-          {% endif %}
+        </div>
+      </section>
+      {% endif %}
 
+      <!-- Four -->
+      <section id="four">
+        <div class="inner">
+          <div class="row">
+              <div class="4u">
+                {% if page.prevLink %}
+                <ul class="actions">
+                  <li><a href="{{ page.prevLink  | relative_url }}" class="button prev">Prev Section</a></li>
+                </ul>
+                {% else %}
+                &nbsp;
+                {% endif %}
+              </div>
+
+              <div class="4u" style="text-align: center;">
+                <ul class="actions">
+                  <li><a href="{{ "" | absolute_url }}/" class="button icon fa-home">Return Home</a></li>
+                </ul>
+              </div>
+
+              <div class="4u" style="text-align: right;">
+                {% if page.nextLink %}
+                <ul class="actions">
+                  <li><a href="{{ page.nextLink  | relative_url }}" class="button next">Next Section</a></li>
+                </ul>
+                {% else %}
+                &nbsp;
+                {% endif %}
+              </div>
+          </div>
         </div>
       </section>
 
@@ -64,7 +112,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
           <iframe
             id="form-{{ form.ID }}-frame"
             data-form-id="{{ form.ID }}"
-            style="overflow: auto; width: 100%; height: 800px;"
+            style="overflow: auto; width: 100%; height: 100%;"
             sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads"
             frameborder="0"
             allowfullscreen=""

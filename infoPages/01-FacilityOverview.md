@@ -1,13 +1,98 @@
 ---
 layout: tourPage
 title: Facility Overview
-description: Introducing the central heating and chilling plant
+description: Introducing the central heating and chiller plant
 image: assets/images/HeatingPlant-Closeup
+nextLink: 'infoPages/02-WaterTubeBoilers.html'
 nav-menu: true
 learning:
-  title: 'Explore The Central Heating/Chilling Plant'
-  description: 'Click below to explore the plant freely.'
-  buttonText: 'Tour The Entire Plant'
+  title: 'Explore The Central Heating/Chiller Plant'
+  description: >
+    Here you can try out the virtual tour interface by exploring the
+    first floor without any restrictions. Click the button below and
+    enjoy the tour!
+  buttonText: 'Tour The Plant'
 tourPano:
   enable: true
+  enabledRooms:
+    - '1S01_22' # Control Room
+    - '1W01_11' # Water treatment room
+    - '1W02_11'
+    - '1S01_10' # Boiler 1
+    - '1S01_01'
+    - '1N01_11'
+    - '1N02_12' # Between 1 and 2
+    - '1S02_02'
+    - '1S02_12'
+    - '1S02_11' # Boiler 2
+    - '1N02_11'
+    - '1S03_12' # Between 2 and 3
+    - '1S03_02'
+    - '1N03_12'
+    - '1N03_11' # Boiler 3
+    - '1N03_10'
+    - '1N03_20'
+    - '1S03_11'
+    - '1S04_12' # Between 3 and 4
+    - '1S04_11' # Boiler 4
+    - '1S04_20'
+    - '1N04_20'
+    - '1N04_00'
+    - '1N04_01'
+    - '1N04_02'
+    - '1N04_22'
+    - '1S05_22' # Chiller 3
+    - '1S05_21'
+    - '1S05_10'
+    - '1S05_00' # Chiller 2
+    - '1S05_11'
+    - '1N05_21'
+    - '1N05_10' # Chiller 1
+    - '1N05_11'
+    - '1N05_01'
+  enabledHotSpots:
+    - 'NONE'
 ---
+The campus of the University of Wisconsin Stout utilizes a central heating and chiller
+facility to provide heating and cooling throughout its buildings. Industrial grade
+boilers and chillers employ the fundamental principles of thermodynamics to add or
+remove thermal energy to or from water. The water carries that energy through insulated
+underground pipes to buildings where it used for a number of tasks (primarily heating and
+air conditioning).
+
+You've probably noticed the heating and chiller plant before due to the large brick
+chimney utilized by the boilers; it's the tallest structure in the town, even taller
+than the iconic clock tower! This project will take you inside the central plant on a
+virtual tour that is enhanced with key information about the thermodynamic processes
+that are active every day in the building. Below is an opportunity to freely explore the
+plant without this extra educational material so that you can orient yourself to the
+interface and overall layout of the building.
+
+## Site Navigation
+Right now on the virtual tour site, there are four sections for your to explore and you
+are currently in the first section. Each of the following sections will cover a
+thermodynamic concept or piece of equipment in use in the heating and chiller plant.
+
+Each section will include the following parts:
+<dl>
+  <dt>Background Information</dt>
+  <dd><p>A short introduction to the thermodynamics concepts or equipment in that section</p></dd>
+
+  <dt>Interactive Virtual Tour</dt>
+  <dd><p>Click the next button to start the tour for that section. Navigate around and click on
+  the information hot-spot buttons (a green circle with an exclamation point) within the tour to
+  view their content. When you are done, click the 'X' button in the upper-right to exit the
+  virtual tour and return to the previous page.</p></dd>
+
+  <dt>Knowledge Quiz</dt>
+  <dd><p>After the tour, there is a short quiz at the end of the page which will attempt to
+  assess how well the information was communicated in the virtual tour. Click the button to
+  open the quiz and submit your answers. Note that the quizzes have a time-limit.</p></dd>
+</dl>
+
+## This is a Preview
+Only the first floor of the building is available right now with access to the basement,
+the catwalk scaffolding and even the roof coming later to help you appreciate the full
+extent of this energy efficient facility at use right here on our campus. You can feel
+free to spend some time in the tour before proceeding to the first thermodynamic topic
+in this educational journey.

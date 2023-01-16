@@ -31,15 +31,24 @@
     <div id="main">
 
         <!-- One -->
-        {% include tiles.html %}
+        <div class="inner">
+            <header class="major">
+                <h2>Introduction</h2>
+            </header>
+            <p>{{ content }}</p>
+        </div>
+
 
         <!-- Two -->
+        {% include tiles.html %}
+
+        <!-- Three -->
         <section id="two">
             <div class="inner">
                 <header class="major">
                     <h2>About This Site</h2>
                 </header>
-                <p>{{ content }}</p>
+                <p>{% include about.html %}</p>
             </div>
         </section>
     </div>
