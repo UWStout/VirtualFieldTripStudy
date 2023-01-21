@@ -23,7 +23,9 @@ assessment:
     - ID: 'o4Eat5UvgUObicYjQ6ZgUhBH9HhOC8lPtzEqifJT6clUOVFHNE80NTFNN1RCRjlZMk0zVFpERDJBVC4u'
       text: 'Heating and Water Properties Quiz'
 tourPano:
+  enabled: true
   startRoom: '1S01_10'
+  disablePriority: 'true'
   enabledRooms:
     - '1S01_10' # Boiler 1
     - '1S01_01'

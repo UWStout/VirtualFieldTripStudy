@@ -23,7 +23,9 @@ assessment:
     - ID: 'o4Eat5UvgUObicYjQ6ZgUhBH9HhOC8lPtzEqifJT6clUOUNGQU1FNFhMRTBLREc1RENEOUwyREtLQy4u'
       text: 'Refrigeration Cycles Quiz'
 tourPano:
+  enabled: true
   startRoom: '1S04_20'
+  disablePriority: 'true'
   enabledRooms:
     - '1S04_20' # Entrance
     - '1S05_22' # Chiller 3

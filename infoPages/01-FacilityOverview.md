@@ -14,6 +14,8 @@ learning:
   buttonText: 'Tour The Plant'
 tourPano:
   enable: true
+  disablePriority: 'true'
+  startRoom: '1S01_10'
   enabledRooms:
     - '1S01_22' # Control Room
     - '1W01_11' # Water treatment room
@@ -51,7 +53,7 @@ tourPano:
     - '1N05_11'
     - '1N05_01'
   enabledHotSpots:
-    - 'NONE'
+    - '1S01_Welcome'
 ---
 The campus of the University of Wisconsin Stout utilizes a central heating and chiller
 facility to provide heating and cooling throughout its buildings. Industrial grade

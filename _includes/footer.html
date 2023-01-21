@@ -56,11 +56,17 @@
 
     // Prepare the tour by attaching to the standard elements
     attachVirtualTour(
-      '{{ include.page.tourPano.startRoom | default: "" }}',
       document.getElementById('panoTourButton'),
       document.getElementById('panoTourRoot'),
-      enabledRooms, enabledHotSpots,
-      'lightgrey', '#2a2f4a'
+      {
+        startingRoom: '{{ include.page.tourPano.startRoom | default: "" }}',
+        disablePriority: '{{ include.page.tourPano.disablePriority | default: "false" }}' === 'true',
+        enableClose: true,
+        enabledRooms,
+        enabledHotSpots,
+        textColor: 'lightgrey',
+        backgroundColor: '#2a2f4a'
+      }
     )
   })
 </script>
