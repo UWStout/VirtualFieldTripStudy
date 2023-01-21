@@ -25,6 +25,7 @@ assessment:
 tourPano:
   enabled: true
   startRoom: '1S04_20'
+  initialYaw: 90
   disablePriority: 'true'
   enabledRooms:
     - '1S04_20' # Entrance

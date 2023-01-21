@@ -60,6 +60,7 @@
       document.getElementById('panoTourRoot'),
       {
         startingRoom: '{{ include.page.tourPano.startRoom | default: "" }}',
+        initialYaw: parseFloat('{{ include.page.tourPano.initialYaw | default: "0" }}'),
         disablePriority: '{{ include.page.tourPano.disablePriority | default: "false" }}' === 'true',
         enableClose: true,
         enabledRooms,
