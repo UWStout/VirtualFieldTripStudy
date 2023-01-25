@@ -52,6 +52,7 @@ tourPano:
     - '1N05_01'
   enabledHotSpots:
     - '1S01_Welcome'
+    - '1S01-ControlRoom'
 ---
 The campus of the University of Wisconsin Stout utilizes a central heating and chiller
 facility to provide heating and cooling throughout its buildings. Industrial grade

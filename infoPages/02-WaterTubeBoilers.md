@@ -4,7 +4,7 @@ title: Water-tube Boilers
 description: Learn about the water-tube boilers used in the heating plant
 image: assets/images/Boiler1
 prevLink: 'infoPages/01-FacilityOverview.html'
-nextLink: 'infoPages/03-SteamTurbine.html'
+nextLink: 'infoPages/03-CentrifugalChillers.html'
 nav-menu: true
 learning:
   title: 'Heating Plant Tour'
