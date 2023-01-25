@@ -8,13 +8,11 @@ nav-menu: true
 learning:
   title: 'Explore The Central Heating/Chiller Plant'
   description: >
-    Here you can try out the virtual tour interface by exploring the
-    first floor without any restrictions. Click the button below and
-    enjoy the tour!
+    Click below to start a tour of the first floor. Be sure to
+    click to watch the video in the first room!
   buttonText: 'Tour The Plant'
 tourPano:
   enable: true
-  disablePriority: 'true'
   startRoom: '1S01_10'
   enabledRooms:
     - '1S01_22' # Control Room
@@ -69,32 +67,3 @@ virtual tour that is enhanced with key information about the thermodynamic proce
 that are active every day in the building. Below is an opportunity to freely explore the
 plant without this extra educational material so that you can orient yourself to the
 interface and overall layout of the building.
-
-## Site Navigation
-Right now on the virtual tour site, there are four sections for your to explore and you
-are currently in the first section. Each of the following sections will cover a
-thermodynamic concept or piece of equipment in use in the heating and chiller plant.
-
-Each section will include the following parts:
-<dl>
-  <dt>Background Information</dt>
-  <dd><p>A short introduction to the thermodynamics concepts or equipment in that section</p></dd>
-
-  <dt>Interactive Virtual Tour</dt>
-  <dd><p>Click the next button to start the tour for that section. Navigate around and click on
-  the information hot-spot buttons (a green circle with an exclamation point) within the tour to
-  view their content. When you are done, click the 'X' button in the upper-right to exit the
-  virtual tour and return to the previous page.</p></dd>
-
-  <dt>Knowledge Quiz</dt>
-  <dd><p>After the tour, there is a short quiz at the end of the page which will attempt to
-  assess how well the information was communicated in the virtual tour. Click the button to
-  open the quiz and submit your answers. Note that the quizzes have a time-limit.</p></dd>
-</dl>
-
-## This is a Preview
-Only the first floor of the building is available right now with access to the basement,
-the catwalk scaffolding and even the roof coming later to help you appreciate the full
-extent of this energy efficient facility at use right here on our campus. You can feel
-free to spend some time in the tour before proceeding to the first thermodynamic topic
-in this educational journey.
