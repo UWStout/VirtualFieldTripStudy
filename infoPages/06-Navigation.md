@@ -2,6 +2,7 @@
 layout: tourPage
 title: Site Navigation and Tips
 description: How to use the Heating Plant Virtual Field Trip Site
+image: assets/images/Piping
 nav-menu: true
 ---
 ## Site Navigation
@@ -19,12 +20,13 @@ Each section will include the following parts:
   the information hot-spot buttons (a green circle with an exclamation point) within the tour to
   view their content. When you are done, click the 'X' button in the upper-right to exit the
   virtual tour and return to the previous page.</p></dd>
-
-  <dt>Knowledge Quiz</dt>
-  <dd><p>After the tour, there may be one or more short quizzes at the end of the page which will
-  attempt to assess how well the information was communicated in the virtual tour. Click the button
-  to open the quiz and submit your answers. Note that the quizzes may have a time-limit.</p></dd>
 </dl>
+
+After you complete all the sections (including their virtual tours) there is a separate page with
+some short quizzes at the end of the page which will attempt to assess how well the information was
+communicated in the virtual tour. Visit the [assessment page]({{ "infoPages/04-Assessments.html" | absolute_url }}")
+and Click the buttons to open the quiz and submit your answers. Note that some of the quizzes may
+have a time-limit.
 
 ## This is a Preview
 Only the first floor of the building is available right now with access to the basement,

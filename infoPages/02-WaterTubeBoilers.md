@@ -16,12 +16,12 @@ learning:
     - 'Two on boiler 1 in the first room'
     - 'One on the back side of boiler 2'
     - 'One on the front of boiler 4 at the other end of the plant'
-assessment:
-  title: 'What Have You Learned'
-  description: 'Take the quiz below to show what you have learned'
-  forms:
-    - ID: 'o4Eat5UvgUObicYjQ6ZgUhBH9HhOC8lPtzEqifJT6clUOVFHNE80NTFNN1RCRjlZMk0zVFpERDJBVC4u'
-      text: 'Heating and Water Properties Quiz'
+# assessment:
+#   title: 'What Have You Learned'
+#   description: 'Take the quiz below to show what you have learned'
+#   forms:
+#     - ID: 'o4Eat5UvgUObicYjQ6ZgUhBH9HhOC8lPtzEqifJT6clUOVFHNE80NTFNN1RCRjlZMk0zVFpERDJBVC4u'
+#       text: 'Heating and Water Properties Quiz'
 tourPano:
   enabled: true
   startRoom: '1S01_10'

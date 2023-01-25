@@ -3,7 +3,7 @@ layout: tourPage
 title: Centrifugal Chillers
 description: The essential mechanism of the chilling plant
 prevLink: 'infoPages/02-WaterTubeBoilers.html'
-nextLink: 'infoPages/04-FunFacts.html'
+nextLink: 'infoPages/04-Assessments.html'
 image: assets/images/Chillers
 nav-menu: true
 learning:
@@ -17,12 +17,12 @@ learning:
     - 'One on the door to your left in the first room'
     - 'One on the end cap of the first chiller (chiller #3)'
     - 'One in the space between chiller 3 and 2'
-assessment:
-  title: 'What Have You Learned'
-  description: 'Take the quiz below to show what you have learned'
-  forms:
-    - ID: 'o4Eat5UvgUObicYjQ6ZgUhBH9HhOC8lPtzEqifJT6clUOUNGQU1FNFhMRTBLREc1RENEOUwyREtLQy4u'
-      text: 'Refrigeration Cycles Quiz'
+# assessment:
+#   title: 'What Have You Learned'
+#   description: 'Take the quiz below to show what you have learned'
+#   forms:
+#     - ID: 'o4Eat5UvgUObicYjQ6ZgUhBH9HhOC8lPtzEqifJT6clUOUNGQU1FNFhMRTBLREc1RENEOUwyREtLQy4u'
+#       text: 'Refrigeration Cycles Quiz'
 tourPano:
   enabled: true
   startRoom: '1S04_20'
