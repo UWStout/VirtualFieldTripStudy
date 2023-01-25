@@ -3,6 +3,7 @@ layout: tourPage
 title: Centrifugal Chillers
 description: The essential mechanism of the chilling plant
 prevLink: 'infoPages/02-WaterTubeBoilers.html'
+nextLink: 'infoPages/04-FunFacts.html'
 image: assets/images/Chillers
 nav-menu: true
 learning:
@@ -42,6 +43,7 @@ tourPano:
     - '1S05_Chiller_General'
     - '1S05_Chiller_HX'
     - '1S05_Chiller_Operation'
+    - '1S05_ChillerWelcome'
 ---
 ## Introduction
 Attached to the heating plant is the central chiller plant that has been operating since 2007, consisting of three 800 Ton chillers. These highly efficient, industrial-grade units, provide chilled water to 20 buildings on the campus through over ten thousand feet of insulated underground piping.

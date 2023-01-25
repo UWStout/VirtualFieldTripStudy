@@ -2,7 +2,6 @@
 layout: tourPage
 title: Site Navigation and Tips
 description: How to use the Heating Plant Virtual Field Trip Site
-image: assets/images/Boiler3-Back
 nav-menu: true
 ---
 ## Site Navigation
