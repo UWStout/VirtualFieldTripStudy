@@ -14,9 +14,10 @@ learning:
     they employ.
   buttonText: 'Learn about the chillers'
   hotspots:
-    - 'One on the door to your left in the first room'
+    - 'One on the door in front of you at the very beginning'
     - 'One on the end cap of the first chiller (chiller #3)'
-    - 'One in the space between chiller 3 and 2'
+    - 'One seen looking at the space between chiller 3 and 2'
+    - 'A video directly between chillers 3 and 2'
 # assessment:
 #   title: 'What Have You Learned'
 #   description: 'Take the quiz below to show what you have learned'

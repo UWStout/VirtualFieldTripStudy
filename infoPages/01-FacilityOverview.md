@@ -11,6 +11,9 @@ learning:
     Click below to start a tour of the first floor. Be sure to
     click to watch the video in the first room!
   buttonText: 'Tour The Plant'
+  hotspots:
+    - 'A video right in front of you when you start'
+    - 'A voice over inside the control room that is through the door to your right when you start.'
 tourPano:
   enable: true
   startRoom: '1S01_10'
@@ -65,6 +68,8 @@ You've probably noticed the heating and chiller plant before due to the large br
 chimney utilized by the boilers; it's the tallest structure in the town, even taller
 than the iconic clock tower! This project will take you inside the central plant on a
 virtual tour that is enhanced with key information about the thermodynamic processes
-that are active every day in the building. Below is an opportunity to freely explore the
-plant without this extra educational material so that you can orient yourself to the
-interface and overall layout of the building.
+that are active every day in the building.
+
+Below is an opportunity to freely explore the first floor of the plant without this extra
+educational material so that you can orient yourself to the interface and overall layout
+of the building.

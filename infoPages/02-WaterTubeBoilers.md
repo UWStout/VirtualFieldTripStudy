@@ -14,8 +14,8 @@ learning:
   buttonText: 'Learn about water-tube boilers'
   hotspots:
     - 'Two on boiler 1 in the first room'
-    - 'One on the back side of boiler 2'
-    - 'One on the front of boiler 4 at the other end of the plant'
+    - 'One on the back side of boiler 2, right next to boiler 1'
+    - 'One on the front of boiler 4 at the other end of the plant from where you start'
 # assessment:
 #   title: 'What Have You Learned'
 #   description: 'Take the quiz below to show what you have learned'
