@@ -3,7 +3,7 @@ layout: tourPage
 title: Cooling Towers
 description: Releasing the captured heat in the refrigeration cycle
 prevLink: 'infoPages/04-WaterTreatment.html'
-nextLink: 'infoPages/06-Assessments.html'
+nextLink: 'infoPages/06-Economizer.html'
 image: assets/images/CoolingTower-Exterior
 nav-menu: true
 learning:
