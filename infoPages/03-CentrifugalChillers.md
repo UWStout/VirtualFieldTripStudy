@@ -3,7 +3,7 @@ layout: tourPage
 title: Centrifugal Chillers
 description: The essential mechanism of the chilling plant
 prevLink: 'infoPages/02-WaterTubeBoilers.html'
-nextLink: 'infoPages/04-Assessments.html'
+nextLink: 'infoPages/04-WaterTreatment.html'
 image: assets/images/Chillers
 nav-menu: true
 learning:
