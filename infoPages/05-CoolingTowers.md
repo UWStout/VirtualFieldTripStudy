@@ -25,6 +25,4 @@ tourPano:
     - 'RS03_CoolingTowerExterior'
     - 'RS05_CoolingTowerInterior'
 ---
-After the refrigerant condenses back to liquid in the chiller condenser, it raises the temperature
-of the cooling water surrounding it. This water needs to release this heat and does so with the
-help of a cooling tower.
+After the refrigerant condenses back to liquid in the chiller condenser, it raises the temperature of the cooling water surrounding it. This water needs to release this heat and does so with the help of a cooling tower.

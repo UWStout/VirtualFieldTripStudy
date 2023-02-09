@@ -24,11 +24,17 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
           {% if page.image %}
             {% unless page.hideImage %}
-              <span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}.png" alt=""/></span>
+              <span class="image right" style="max-width: 50%;"><img src="{{ site.baseurl }}/{{ page.image }}.png" alt=""/></span>
             {% endunless %}
           {% endif %}
 
           {{ content }}
+
+          {% if page.image %}
+            {% unless page.hideImage %}
+              <div style="clear: both"></div>
+            {% endunless %}
+          {% endif %}
         </div>
       </section>
 

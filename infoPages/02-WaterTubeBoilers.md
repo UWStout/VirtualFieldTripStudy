@@ -56,7 +56,7 @@ tourPano:
     - '1N02_Boiler2'
     - '1S04_Boiler4'
 ---
-# The Four Boilers
+## The Four Boilers
 There are four boilers installed in the central heating plant. Three have D-type water
 tubes while the fourth uses O-type water tubes. All four boilers work on the same
 basic principles:

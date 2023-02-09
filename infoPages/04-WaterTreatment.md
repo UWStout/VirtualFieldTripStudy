@@ -24,5 +24,4 @@ tourPano:
     - '1W01_WaterTreat_Mechanical'
     - '1W02_WaterTreat_Chemical'
 ---
-Water that comes in from the city must be treated before it enters the boiler system
-or it could damage the pipes and equipment.
+Just like a private home, water that comes in from the city needs some treatment. Private homes may utilize a water softener and a whole-home filter to remove contaminants and improve taste. In the heating plant, the water must be treated before it enters the boiler system or it could damage the pipes and equipment.

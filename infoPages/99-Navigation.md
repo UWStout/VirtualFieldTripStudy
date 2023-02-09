@@ -6,9 +6,9 @@ image: assets/images/Piping
 nav-menu: true
 ---
 ## Site Navigation
-Right now on the virtual tour site, there are four sections for your to explore and you
-are currently in the first section. Each of the following sections will cover a
-thermodynamic concept or piece of equipment in use in the heating and chiller plant.
+Right now on the virtual tour site, there are nine sections for your to explore and you
+are currently in the last section. Each of the previous sections covers a thermodynamic
+concept or piece of equipment in use in the heating and chiller plant.
 
 Each section will include the following parts:
 <dl>
@@ -24,13 +24,6 @@ Each section will include the following parts:
 
 After you complete all the sections (including their virtual tours) there is a separate page with
 some short quizzes at the end of the page which will attempt to assess how well the information was
-communicated in the virtual tour. Visit the [assessment page]({{ "infoPages/04-Assessments.html" | absolute_url }}")
+communicated in the virtual tour. Visit the [assessment page]({{ "infoPages/08-Assessments.html" | absolute_url }})
 and Click the buttons to open the quiz and submit your answers. Note that some of the quizzes may
 have a time-limit.
-
-## This is a Preview
-Only the first floor of the building is available right now with access to the basement,
-the catwalk scaffolding and even the roof coming later to help you appreciate the full
-extent of this energy efficient facility at use right here on our campus. You can feel
-free to spend some time in the tour before proceeding to the first thermodynamic topic
-in this educational journey.

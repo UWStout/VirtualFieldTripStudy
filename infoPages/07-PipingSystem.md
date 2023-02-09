@@ -3,7 +3,7 @@ layout: tourPage
 title: Piping System
 description: The piping system distributes the heating/chilling medium
 prevLink: 'infoPages/06-Economizer.html'
-nextLink: 'infoPages/08-PersonnelAndEngineers.html'
+nextLink: 'infoPages/08-Assessments.html'
 image: assets/images/Piping
 hideImage: true
 nav-menu: true
