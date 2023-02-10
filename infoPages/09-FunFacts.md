@@ -13,7 +13,7 @@ thermodynamics in general.
 ### WHAT IS THE TALLEST STRUCTURE IN MENOMONIE, WISCONSIN?
 At 240 feet and 4-inch height, the red chimney of Stout’s heating plant is one of the tallest structures
 in Menomonie. The chimney was erected in 1965 by Consolidated Chimney Company, Chicago, Illinois using
-almost 90,000 red octagon and face bricks. A chimney is a structure for venting hot flue gas from the
+89,800 red octagon and face bricks. A chimney is a structure for venting hot flue gas from the
 boiler to the outside atmosphere at a suitable height to ensure the pollutants are dispersed over a wider
 area to meet legislation and safety requirements. Its height is determined primarily by environmental
 protection agencies permitting ground-level concentration limits. It usually is cylindrical in
@@ -78,7 +78,8 @@ An icebox was a wooden box containing ice and food to be preserved. It is a comp
 and was a common early-twentieth-century kitchen appliance before the development of safely powered refrigeration
 devices.
 
-Originally, the ice was put on the bottom and the food on the top. But eventually, it was realized that this was inefficient because cold air is heavier than warm air. Thereafter, the ice was put on the top of the icebox, and
+Originally, the ice was put on the bottom and the food on the top. But eventually, it was realized that this was
+inefficient because cold air is heavier than warm air. Thereafter, the ice was put on the top of the icebox, and
 the food was always placed below it so that the heavier cold air could circulate around the food. The icebox was
 invented in 1803 and manufactured in the United States until 1953. Ice needed to be added every day or two in the
 original iceboxes. But, by 1923, improved thermal insulation design required ice to be added only every five to
