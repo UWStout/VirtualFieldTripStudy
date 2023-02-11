@@ -3,7 +3,7 @@ layout: tourPage
 title: Economizer
 description: Recapturing some energy before it leaves the plant
 prevLink: 'infoPages/05-CoolingTowers.html'
-nextLink: 'infoPages/07-PipingSystem.html'
+nextLink: 'infoPages/07-LibraryCondenser.html'
 image: assets/images/Boiler1-Economizer
 nav-menu: true
 learning:
