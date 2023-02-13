@@ -7,45 +7,40 @@ nextLink: 'infoPages/04-WaterTreatment.html'
 image: assets/images/Chillers
 nav-menu: true
 learning:
-  title: 'Chiller Plant Tour'
-  description: >
-    Click below to explore the chiller side of the central plant and
-    learn more about centrifugal chillers and the refrigeration cycle
-    they employ.
-  buttonText: 'Learn about the chillers'
-  hotspots:
-    - 'One on the door in front of you at the very beginning'
-    - 'One on the end cap of the first chiller (chiller #3)'
-    - 'One seen looking at the space between chiller 3 and 2'
-    - 'A video directly between chillers 3 and 2'
-# assessment:
-#   title: 'What Have You Learned'
-#   description: 'Take the quiz below to show what you have learned'
-#   forms:
-#     - ID: 'o4Eat5UvgUObicYjQ6ZgUhBH9HhOC8lPtzEqifJT6clUOUNGQU1FNFhMRTBLREc1RENEOUwyREtLQy4u'
-#       text: 'Refrigeration Cycles Quiz'
+  - title: 'Chiller Plant Tour'
+    description: >
+      Click below to explore the chiller side of the central plant and
+      learn more about centrifugal chillers and the refrigeration cycle
+      they employ.
+    buttonText: 'Learn about the chillers'
+    hotspots:
+      - 'One on the door in front of you at the very beginning'
+      - 'One on the end cap of the first chiller (chiller #3)'
+      - 'One seen looking at the space between chiller 3 and 2'
+      - 'A video directly between chillers 3 and 2'
+
 tourPano:
-  enabled: true
-  startRoom: '1S04_20'
-  initialYaw: 90
-  disablePriority: 'true'
-  enabledRooms:
-    - '1S04_20' # Entrance
-    - '1S05_22' # Chiller 3
-    - '1S05_21'
-    - '1S05_10'
-    - '1S05_00' # Chiller 2
-    - '1S05_11'
-    - '1N05_21'
-    - '1N05_10' # Chiller 1
-    - '1N05_11'
-    - '1N05_01'
-  enabledHotSpots:
-    - '1S05_Chiller_General'
-    - '1S05_Chiller_HX'
-    - '1S05_Chiller_Operation'
-    - '1S05_ChillerWelcome'
-    - '1S05_ChillerComponents'
+  - enabled: true
+    startRoom: '1S04_20'
+    initialYaw: 90
+    disablePriority: 'true'
+    enabledRooms:
+      - '1S04_20' # Entrance
+      - '1S05_22' # Chiller 3
+      - '1S05_21'
+      - '1S05_10'
+      - '1S05_00' # Chiller 2
+      - '1S05_11'
+      - '1N05_21'
+      - '1N05_10' # Chiller 1
+      - '1N05_11'
+      - '1N05_01'
+    enabledHotSpots:
+      - '1S05_Chiller_General'
+      - '1S05_Chiller_HX'
+      - '1S05_Chiller_Operation'
+      - '1S05_ChillerWelcome'
+      - '1S05_ChillerComponents'
 ---
 ## Introduction
 Attached to the heating plant is the central chiller plant that has been operating since 2007, consisting of three 800 Ton chillers. These highly efficient, industrial-grade units, provide chilled water to 20 buildings on the campus through over ten thousand feet of insulated underground piping.

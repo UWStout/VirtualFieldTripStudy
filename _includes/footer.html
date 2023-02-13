@@ -37,38 +37,42 @@
 <script src="{{ "assets/js/virtualTour.js" | absolute_url }}"></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    // Build enabled room array
-    const enabledRooms = [
-    // {% for room in include.page.tourPano.enabledRooms %}
-      '{{ room }}',
-    // {% endfor %}
-    // {% if include.page.tourPano.startRoom %}
-      '{{ include.page.tourPano.startRoom }}'
-    // {% endif %}
-    ].filter(element => !!element)
+    // {% for pano in include.page.tourPano %}
+    {
+      // Build enabled room array
+      const enabledRooms = [
+      // {% for room in pano.enabledRooms %}
+        '{{ room }}',
+      // {% endfor %}
+      // {% if pano.startRoom %}
+        '{{ pano.startRoom }}'
+      // {% endif %}
+      ].filter(element => !!element)
 
-    // Build enabled hotSpot
-    const enabledHotSpots = [
-    // {% for hotspot in include.page.tourPano.enabledHotSpots %}
-      '{{ hotspot }}',
-    // {% endfor %}
-    ].filter(element => !!element)
+      // Build enabled hotSpot
+      const enabledHotSpots = [
+      // {% for hotspot in pano.enabledHotSpots %}
+        '{{ hotspot }}',
+      // {% endfor %}
+      ].filter(element => !!element)
 
-    // Prepare the tour by attaching to the standard elements
-    attachVirtualTour(
-      document.getElementById('panoTourButton'),
-      document.getElementById('panoTourRoot'),
-      {
-        startingRoom: '{{ include.page.tourPano.startRoom | default: "" }}',
-        initialYaw: parseFloat('{{ include.page.tourPano.initialYaw | default: "0" }}'),
-        disablePriority: '{{ include.page.tourPano.disablePriority | default: "false" }}' === 'true',
-        enableClose: true,
-        enabledRooms,
-        enabledHotSpots,
-        textColor: 'lightgrey',
-        backgroundColor: '#2a2f4a'
-      }
-    )
+      // Prepare the tour by attaching to the standard elements
+      attachVirtualTour(
+        document.getElementById('panoTourButton-{{ forloop.index }}'),
+        document.getElementById('panoTourRoot-{{ forloop.index }}'),
+        {
+          startingRoom: '{{ pano.startRoom | default: "" }}',
+          initialYaw: parseFloat('{{ pano.initialYaw | default: "0" }}'),
+          disablePriority: '{{ pano.disablePriority | default: "false" }}' === 'true',
+          enableClose: true,
+          enabledRooms,
+          enabledHotSpots,
+          textColor: 'lightgrey',
+          backgroundColor: '#2a2f4a'
+        }
+      )
+    }
+    // {% endfor %}
   })
 </script>
 {% endif %}

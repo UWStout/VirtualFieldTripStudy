@@ -39,24 +39,26 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
       </section>
 
       {% if page.learning %}
-      <!-- Two -->
-      <section id="two">
-        <div class="inner">
-            <h2 id="tour">{{ page.learning.title }}</h2>
-            <p>{{ page.learning.description }}</p>
-            <button id="panoTourButton" class="tourButton button big fit icon fa-vr-cardboard">
-              {{ page.learning.buttonText | default: "Start Tour" }}
-            </button>
-            {% if page.learning.hotspots %}
-            <p style="margin-top: 20px; margin-bottom: 8px;">Look for the following Hotspots:</p>
-            <ul>
-              {% for hotspotText in page.learning.hotspots %}
-              <li>{{ hotspotText }}</li>
-              {% endfor %}
-            </ul>
-            {% endif %}
-        </div>
-      </section>
+        {% for learn in page.learning %}
+          <!-- Two -->
+          <section id="two">
+            <div class="inner">
+              <h2 id="tour">{{ learn.title }}</h2>
+              <p>{{ learn.description }}</p>
+              <button id="panoTourButton-{{ forloop.index }}" class="tourButton button big fit icon fa-vr-cardboard">
+                {{ learn.buttonText | default: "Start Tour" }}
+              </button>
+              {% if learn.hotspots %}
+              <p style="margin-top: 20px; margin-bottom: 8px;">Look for the following Hotspots:</p>
+              <ul>
+                {% for hotspotText in learn.hotspots %}
+                  <li>{{ hotspotText }}</li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+            </div>
+          </section>
+        {% endfor %}
       {% endif %}
 
       {% if page.assessment %}
@@ -110,7 +112,9 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
     </div>
 
     {% if page.tourPano %}
-      <div id="panoTourRoot" class="floatingOverlay"></div>
+      {% for pano in page.tourPano %}
+        <div id="panoTourRoot-{{ forloop.index }}" class="floatingOverlay"></div>
+      {% endfor %}
     {% endif %}
 
     {% if page.assessment %}

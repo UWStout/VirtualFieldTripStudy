@@ -2,11 +2,33 @@
 layout: tourPage
 title: Piping System
 description: The piping system distributes the heating/chilling medium
-prevLink: 'infoPages/07-LibraryCondenser.html'
+prevLink: 'infoPages/07-LibraryAirHandler.html'
 nextLink: 'infoPages/09-Assessments.html'
 image: assets/images/Piping
 hideImage: true
 nav-menu: true
+learning:
+  - title: "Learn about the Chilled Water Loop"
+    description: >
+      Click below to explore the basement of the chilled plant and learn
+      about the chilled water supply just before it exits and when it returns
+      to the plant for reuse.
+    buttonText: 'Chilled Water Loop'
+tourPano:
+  - enable: true
+    startRoom: 'LS05_20'
+    enabledRooms:
+      - 'LS05_20'
+      - 'LS05_10b'
+      - 'LS05_11b'
+      - 'LN05_11'
+      - 'LS05_12'
+      - 'LN04_10'
+      - 'LN04_12'
+      - 'LS04_12'
+    enabledHotSpots:
+      - 'LS05_DistributionHeader'
+      - 'LN05_DistributionPumps'
 ---
 <figure style="margin-bottom: 24px;text-align: center;">
   <img

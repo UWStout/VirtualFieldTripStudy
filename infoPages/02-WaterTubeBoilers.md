@@ -7,54 +7,88 @@ prevLink: 'infoPages/01-FacilityOverview.html'
 nextLink: 'infoPages/03-CentrifugalChillers.html'
 nav-menu: true
 learning:
-  title: 'Heating Plant Tour'
-  description: >
-    Click below to explore the four boilers of the heating plant
-    and learn about water-tube boilers in general.
-  buttonText: 'Learn about water-tube boilers'
-  hotspots:
-    - 'Two on boiler 1 in the first room'
-    - 'One on the back side of boiler 2, right next to boiler 1'
-    - 'One on the front of boiler 4 at the other end of the plant from where you start'
-# assessment:
-#   title: 'What Have You Learned'
-#   description: 'Take the quiz below to show what you have learned'
-#   forms:
-#     - ID: 'o4Eat5UvgUObicYjQ6ZgUhBH9HhOC8lPtzEqifJT6clUOVFHNE80NTFNN1RCRjlZMk0zVFpERDJBVC4u'
-#       text: 'Heating and Water Properties Quiz'
+  - title: 'Boiler #1 Tour'
+    description: >
+      Click below to explore the first boiler of the heating plant
+      and learn about water-tube boilers in general.
+    buttonText: 'Explore Boiler #1'
+    hotspots:
+      - 'Two on boiler 1 in the very first room'
+      - 'One on the back side of boiler 2, right next to boiler 1'
+      - 'One on the front of boiler 4 at the other end of the plant from where you start'
+
+  - title: 'Boilers #2 & #3 Tour'
+    description: >
+      Click below to explore the second and third boilers of the heating plant.
+    buttonText: 'Explore Boilers #2 & #3'
+    hotspots:
+      - 'One on the BACK of boiler 2'
+      - 'One on the front of boiler 4 at the other end of the plant from where you start'
+
+  - title: 'Boiler #4 Tour'
+    description: >
+      Click below to explore the fourth and last boiler of the heating plant.
+    buttonText: 'Explore Boiler #4'
+    hotspots:
+      - 'One on the front of boiler 4 (up the steps)'
+      - 'Two on TOP of boiler 4 (up the catwalk on the side)'
+
 tourPano:
-  enabled: true
-  startRoom: '1S01_10'
-  disablePriority: 'true'
-  enabledRooms:
-    - '1S01_10' # Boiler 1
-    - '1S01_01'
-    - '1N01_11'
-    - '1N02_12' # Between 1 and 2
-    - '1S02_02'
-    - '1S02_12'
-    - '1S02_11' # Boiler 2
-    - '1N02_11'
-    - '1S03_12' # Between 2 and 3
-    - '1S03_02'
-    - '1N03_12'
-    - '1N03_11' # Boiler 3
-    - '1N03_10'
-    - '1N03_20'
-    - '1S03_11'
-    - '1S04_12' # Between 3 and 4
-    - '1S04_11' # Boiler 4
-    - '1S04_20'
-    - '1N04_20'
-    - '1N04_00'
-    - '1N04_01'
-    - '1N04_02'
-    - '1N04_22'
-  enabledHotSpots:
-    - '1S01_Boiler'
-    - '1S01_Burner'
-    - '1N02_Boiler2'
-    - '1S04_Boiler4'
+  - enabled: true
+    startRoom: '1S01_10'
+    disablePriority: 'true'
+    enabledRooms:
+      - '1S01_10' # Boiler 1
+      - '1S01_01'
+      - '1N01_11'
+      - '1N02_12' # Between 1 and 2
+      - '1S02_02'
+      - '1S02_12'
+    enabledHotSpots:
+      - '1S01_Boiler'
+      - '1S01_Burner'
+
+  - enabled: true
+    startRoom: '1S03_12'
+    disablePriority: 'true'
+    enabledRooms:
+      - '1N02_12' # Between 1 and 2
+      - '1S02_02'
+      - '1S02_12'
+      - '1S02_11' # Boiler 2
+      - '1N02_11'
+      - '1S03_12' # Between 2 and 3
+      - '1S03_02'
+      - '1N03_12'
+      - '1N03_11' # Boiler 3
+      - '1N03_10'
+      - '1N03_20'
+      - '1S03_11'
+      - '1S04_12' # Between 3 and 4
+    enabledHotSpots:
+      - '1N02_Boiler2'
+
+  - enabled: true
+    startRoom: '1S04_20'
+    disablePriority: 'true'
+    initialYaw: -25
+    enabledRooms:
+      - '1S04_12' # Between 3 and 4
+      - '1S04_11' # Boiler 4
+      - '1S04_20'
+      - '1N04_20'
+      - '1N04_00'
+      - '1N04_01'
+      - '1N04_02'
+      - '1N04_22'
+      - '1N04_10' # Up to top of boiler 4
+      - '2S04_00'
+      - '2N04_21'
+    enabledHotSpots:
+      - '1S04_Boiler4'
+      - '2N04_Boiler4_Stop_Valves'
+      - '2N04_Boiler4_Safety_Valves'
+
 ---
 ## The Four Boilers
 There are four boilers installed in the central heating plant. Three have D-type water
