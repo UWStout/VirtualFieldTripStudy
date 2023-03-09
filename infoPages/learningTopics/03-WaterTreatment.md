@@ -3,9 +3,11 @@ layout: tourPage
 title: Water Treatment
 description: Preparation of the water used throughout the plant
 prevLink: 'infoPages/03-CentrifugalChillers.html'
+upLink: 'infoPages/02-LearningTopics.html'
 nextLink: 'infoPages/05-CoolingTowers.html'
 image: assets/images/WaterTreatment
-nav-menu: true
+nav-menu: false
+show_tile: false
 learning:
   - title: 'Lear about water treatment'
     description: >

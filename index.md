@@ -11,4 +11,4 @@ Welcome to the beta version of the Thermodynamics Virtual Field Trip Project at 
 shown below are best visited in order. Each section will have a "previous", "home", and "next" button at
 the bottom to proceed through in order. You can also access any page from the MENU button in the upper-right.
 
-Click the first section "Facility Overview" to begin!
+Click the first section "Facility Overview" to begin or click "Learning Topics" to jump right to the content!

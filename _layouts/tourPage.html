@@ -92,9 +92,13 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
               <div class="4u" style="text-align: center;">
                 <ul class="actions">
-                  <li><a href="{{ "" | absolute_url }}/" class="button icon fa-home">Return Home</a></li>
+                  {% if page.upLink %}
+                    <li><a href="{{ page.upLink  | relative_url }}" class="button icon fa-level-up">To Index</a></li>
+                  {% else %}
+                    <li><a href="{{ "" | absolute_url }}/" class="button icon fa-home">Return Home</a></li>
+                  {% endif %}
                 </ul>
-              </div>
+            </div>
 
               <div class="4u" style="text-align: right;">
                 {% if page.nextLink %}

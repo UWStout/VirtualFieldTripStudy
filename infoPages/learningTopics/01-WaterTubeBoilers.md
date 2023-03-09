@@ -3,9 +3,10 @@ layout: tourPage
 title: Water-tube Boilers
 description: Learn about the water-tube boilers used in the heating plant
 image: assets/images/Boiler1
-prevLink: 'infoPages/01-FacilityOverview.html'
-nextLink: 'infoPages/03-CentrifugalChillers.html'
-nav-menu: true
+upLink: 'infoPages/02-LearningTopics.html'
+nextLink: 'infoPages/learningTopics/02-CentrifugalChillers.html'
+nav-menu: false
+show_tile: false
 learning:
   - title: 'Boiler #1 Tour'
     description: >

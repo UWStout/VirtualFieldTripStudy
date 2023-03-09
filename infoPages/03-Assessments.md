@@ -2,8 +2,8 @@
 layout: tourPage
 title: Assessments
 description: Tell us what you know
-prevLink: 'infoPages/08-PipingSystem.html'
-nextLink: 'infoPages/10-FunFacts.html'
+prevLink: 'infoPages/02-LearningTopics.html'
+nextLink: 'infoPages/04-FunFacts.html'
 image: assets/images/CoolingTower-Interior
 nav-menu: true
 assessment:

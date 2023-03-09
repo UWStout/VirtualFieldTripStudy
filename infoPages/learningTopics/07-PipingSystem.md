@@ -2,11 +2,12 @@
 layout: tourPage
 title: Piping System
 description: The piping system distributes the heating/chilling medium
-prevLink: 'infoPages/07-LibraryAirHandler.html'
-nextLink: 'infoPages/09-Assessments.html'
+prevLink: 'infoPages/learningTopics/06-LibraryAirHandler.html'
+upLink: 'infoPages/02-LearningTopics.html'
 image: assets/images/Piping
 hideImage: true
-nav-menu: true
+nav-menu: false
+show_tile: false
 learning:
   - title: "Learn about the Chilled Water Loop"
     description: >

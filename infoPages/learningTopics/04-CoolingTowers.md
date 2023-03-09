@@ -2,10 +2,12 @@
 layout: tourPage
 title: Cooling Towers
 description: Releasing the captured heat in the refrigeration cycle
-prevLink: 'infoPages/04-WaterTreatment.html'
-nextLink: 'infoPages/06-Economizer.html'
+prevLink: 'infoPages/learningTopics/03-WaterTreatment.html'
+upLink: 'infoPages/02-LearningTopics.html'
+nextLink: 'infoPages/learningTopics/05-Economizer.html'
 image: assets/images/CoolingTower-Exterior
-nav-menu: true
+nav-menu: false
+show_tile: false
 learning:
   - title: 'Explore The Chilled Plant Mezzanine'
     description: >

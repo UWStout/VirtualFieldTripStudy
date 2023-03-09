@@ -3,7 +3,7 @@ layout: tourPage
 title: Facility Overview
 description: Introducing the central heating and chiller plant
 image: assets/images/HeatingPlant-Closeup
-nextLink: 'infoPages/02-WaterTubeBoilers.html'
+nextLink: 'infoPages/02-LearningTopics.html'
 nav-menu: true
 learning:
   - title: 'Explore The Central Heating/Chiller Plant'

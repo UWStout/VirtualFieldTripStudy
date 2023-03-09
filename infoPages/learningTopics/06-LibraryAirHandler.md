@@ -1,11 +1,13 @@
 ---
 layout: tourPage
 title: Air Handling Units (AHU)
-description: Where the hot water gets used
-prevLink: 'infoPages/06-Economizer.html'
-nextLink: 'infoPages/08-PipingSystem.html'
+description: Where the heated or chilled water gets used
+prevLink: 'infoPages/learningTopics/05-Economizer.html'
+upLink: 'infoPages/02-LearningTopics.html'
+nextLink: 'infoPages/learningTopics/07-PipingSystem.html'
 image: assets/images/Library-AHU
-nav-menu: true
+nav-menu: false
+show_tile: false
 learning:
   - title: "Explore One of the Air Handling Units"
     description: >
