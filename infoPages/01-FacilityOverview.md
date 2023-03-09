@@ -17,6 +17,7 @@ learning:
 tourPano:
   - enable: true
     startRoom: '1S01_10'
+    urlPrefix: ''
     enabledRooms:
       - '1S01_22' # Control Room
       - '1W01_11' # Water treatment room

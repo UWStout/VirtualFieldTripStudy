@@ -38,6 +38,7 @@ tourPano:
   - enabled: true
     startRoom: '1S01_10'
     disablePriority: 'true'
+    urlPrefix: '../'
     enabledRooms:
       - '1S01_10' # Boiler 1
       - '1S01_01'
@@ -52,6 +53,7 @@ tourPano:
   - enabled: true
     startRoom: '1S03_12'
     disablePriority: 'true'
+    urlPrefix: '../'
     enabledRooms:
       - '1N02_12' # Between 1 and 2
       - '1S02_02'
@@ -72,6 +74,7 @@ tourPano:
   - enabled: true
     startRoom: '1S04_20'
     disablePriority: 'true'
+    urlPrefix: '../'
     initialYaw: -25
     enabledRooms:
       - '1S04_12' # Between 3 and 4

@@ -19,6 +19,7 @@ tourPano:
   - enable: true
     startRoom: '1S02_11'
     initialYaw: 180
+    urlPrefix: '../'
     enabledRooms:
       - '1S02_11' # Exit from Central Heating Plant
       - 'LIB_NE' # Library Condenser rooms

@@ -21,6 +21,7 @@ tourPano:
   - enable: true
     startRoom: '1N01_11'
     initialYaw: 25
+    urlPrefix: '../'
     enabledRooms:
       - '1W01_11' # Water treatment room
       - '1W02_11'

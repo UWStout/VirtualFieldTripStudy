@@ -30,6 +30,7 @@ tourPano:
   - enable: true
     startRoom: '2S04_20'
     initialYaw: 90
+    urlPrefix: '../'
     enabledRooms:
       - '2S04_20'
       - '2S05_12' # Chilled Plant Mezzanine
@@ -41,6 +42,7 @@ tourPano:
   - enable: true
     startRoom: 'RS03_01b'
     initialYaw: 80
+    urlPrefix: '../'
     enabledRooms:
       - 'RS03_01b' # Roof
       - 'RS05_11'

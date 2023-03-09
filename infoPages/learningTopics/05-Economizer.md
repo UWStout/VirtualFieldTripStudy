@@ -17,6 +17,7 @@ tourPano:
   - enable: true
     startRoom: '2S01_11'
     initialYaw: 45
+    urlPrefix: '../'
     enabledRooms:
       - '2S01_11' # Catwalk around Boiler 1
       - '2N01_21'

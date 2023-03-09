@@ -26,6 +26,7 @@ tourPano:
     startRoom: '1S04_20'
     initialYaw: 90
     disablePriority: 'true'
+    urlPrefix: '../'
     enabledRooms:
       - '1S04_20' # Entrance
       - '1S05_22' # Chiller 3

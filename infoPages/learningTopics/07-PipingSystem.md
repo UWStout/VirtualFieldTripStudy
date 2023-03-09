@@ -18,6 +18,7 @@ learning:
 tourPano:
   - enable: true
     startRoom: 'LS05_20'
+    urlPrefix: '../'
     enabledRooms:
       - 'LS05_20'
       - 'LS05_10b'
