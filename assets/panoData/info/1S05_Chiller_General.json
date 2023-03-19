@@ -1,0 +1,38 @@
+{
+  "name": "1S05_Chiller_General",
+  "images": [{
+    "src": "PlantOverview.png",
+    "caption": "Central Heating/Chiller Plants Aerial View",
+    "builds": [
+      null,
+      { "src": "Chiller", "x": 0, "y": 0 }
+    ]
+  }, {
+    "src": "Chiller3-SideView.png",
+    "caption": "Chiller #3, a York YK MaxE Centrifugal Chiller"
+  }, {
+    "src": "PlantOverview.png",
+    "caption": "The Central Heating & Chiller Plants Represent a \"District Energy System\"",
+    "builds": [
+      null,
+      { "src": "Heating", "x": 0, "y": 0 },
+      { "src": "", "x": 0, "y": 0 }
+    ]
+  }, {
+    "src": "StudentsAtWork.png",
+    "caption": "The Heating & Chiller Plants are a Valuable Educational Resource"
+  }],
+  "height": 713,
+  "audio": {
+    "src": "Hot spot 1S05-Chiller",
+    "slideTiming": {
+      "0": "0-0",
+      "1": "0-1",
+      "4": "1",
+      "7": "2-0",
+      "9": "2-1",
+      "11": "2-2",
+      "15": "3"
+    }
+  }
+}
