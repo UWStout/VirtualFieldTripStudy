@@ -32,23 +32,18 @@ infoLinks:
   - name: 'Steam Turbine'
     file: '08-SteamTurbine.html'
     description: Using thermal energy to create mechanical work
-    disabled: true
   - name: 'Compressor'
     file: '09-Compressor.html'
-    description: An essential component of the centrifugal chiller
-    disabled: true
+    description: Generating Compressed Air for the Plant
   - name: 'Pumps'
     file: '10-Pumps.html'
     description: Creating pressure to distribute the heating/cooling medium
-    disabled: true
   - name: 'Combustion Fuel'
     file: '11-CombustionFuel.html'
     description: An essential ingredient to create thermal energy
-    disabled: true
   - name: 'Combustion Air Fan'
     file: '12-CombustionAirFan.html'
     description: Good air flow is necessary to maintain combustion
-    disabled: true
 ---
 Each link below will take you to an area in the central heating and chilling plant with learning topics
 available for you to engage!  You can visit them in any order.

@@ -5,29 +5,26 @@ description: An essential ingredient to create thermal energy
 prevLink: 'infoPages/learningTopics/10-Pumps.html'
 upLink: 'infoPages/02-LearningTopics.html'
 nextLink: 'infoPages/learningTopics/12-CombustionAirFan.html'
-image: assets/images/Chillers
 nav-menu: false
 show_tile: false
 learning:
   - title: "Learn about the Fuel for Combustion"
     description: >
-      Description goes here
+      Fuel is consumed to heat the water and convert it into steam.
     buttonText: 'Combustion Fuel'
 tourPano:
   - enable: true
-    startRoom: 'LS05_20'
+    initialYaw: 15
+    startRoom: '1S03_11'
     urlPrefix: '../'
     enabledRooms:
-      - 'LS05_20'
-      - 'LS05_10b'
-      - 'LS05_11b'
-      - 'LN05_11'
-      - 'LS05_12'
-      - 'LN04_10'
-      - 'LN04_12'
-      - 'LS04_12'
+      - '1S03_12' # Between 2 and 3
+      - '1S03_02'
+      - '1N03_12'
+      - '1N03_11' # Boiler 3
+      - '1N03_10'
+      - '1N03_20'
+      - '1S03_11'
     enabledHotSpots:
-      - 'LS05_DistributionHeader'
-      - 'LN05_DistributionPumps'
+      - '1S03_Fuel_Combustion'
 ---
-Overview blurb goes here

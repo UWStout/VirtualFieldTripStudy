@@ -1,33 +1,30 @@
 ---
 layout: tourPage
 title: Compressor
-description: An essential component of the centrifugal chiller
+description: Generating Compressed Air for the Plant
 prevLink: 'infoPages/learningTopics/08-SteamTurbine.html'
 upLink: 'infoPages/02-LearningTopics.html'
 nextLink: 'infoPages/learningTopics/10-Pumps.html'
-image: assets/images/Chillers
 nav-menu: false
 show_tile: false
 learning:
-  - title: "Learn about the Compressor"
+  - title: "Learn about the Air Compressor"
     description: >
-      Description goes here
-    buttonText: 'Compressor'
+      The air compress provides compressed air for many purposes throughout the plant.
+    buttonText: 'Air Compressor Tour'
 tourPano:
   - enable: true
-    startRoom: 'LS05_20'
+    startRoom: 'LS02_01'
+    initialYaw: -90
     urlPrefix: '../'
     enabledRooms:
-      - 'LS05_20'
-      - 'LS05_10b'
-      - 'LS05_11b'
-      - 'LN05_11'
-      - 'LS05_12'
-      - 'LN04_10'
-      - 'LN04_12'
-      - 'LS04_12'
+      - 'LN02_11'
+      - 'LN01_10'
+      - 'LN01_02'
+      - 'LS02_12'
+      - 'LS01_11'
+      - 'LN01_22'
     enabledHotSpots:
-      - 'LS05_DistributionHeader'
-      - 'LN05_DistributionPumps'
+      - 'LS02_Compressor'
 ---
-Overview blurb goes here
+Creation and distribution of compressed air for use throughout the plant.

@@ -4,29 +4,24 @@ title: Combustion Air Fan
 description: Good air flow is necessary to maintain combustion
 prevLink: 'infoPages/learningTopics/11-CombustionFuel.html'
 upLink: 'infoPages/02-LearningTopics.html'
-image: assets/images/Chillers
 nav-menu: false
 show_tile: false
 learning:
   - title: "Learn about Combustion Air Flow"
     description: >
-      Description goes here
+      Air must be rapidly moved through the combustion chambers and over the water tubes to heat the water.
     buttonText: 'Combustion Air Flow'
 tourPano:
   - enable: true
-    startRoom: 'LS05_20'
+    startRoom: 'LS03_02'
+    initialYaw: -35
     urlPrefix: '../'
     enabledRooms:
-      - 'LS05_20'
-      - 'LS05_10b'
-      - 'LS05_11b'
-      - 'LN05_11'
-      - 'LS05_12'
-      - 'LN04_10'
-      - 'LN04_12'
-      - 'LS04_12'
+      - 'LN03_12'
+      - 'LN02_11'
+      - 'LS02_01'
+      - 'LS02_10'
+      - 'LS03_11'
     enabledHotSpots:
-      - 'LS05_DistributionHeader'
-      - 'LN05_DistributionPumps'
+      - 'LS03_Combustion_Air_Fan'
 ---
-Overview blurb goes here

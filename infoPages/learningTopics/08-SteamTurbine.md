@@ -14,7 +14,7 @@ learning:
       Description goes here
     buttonText: 'Steam Turbine'
 tourPano:
-  - enable: true
+  - enable: false
     startRoom: 'LS05_20'
     urlPrefix: '../'
     enabledRooms:
@@ -30,4 +30,4 @@ tourPano:
       - 'LS05_DistributionHeader'
       - 'LN05_DistributionPumps'
 ---
-Overview blurb goes here
+Coming soon
