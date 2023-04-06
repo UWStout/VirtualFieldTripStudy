@@ -6,14 +6,19 @@ image: assets/images/HeatingPlant-Closeup
 nextLink: 'infoPages/02-LearningTopics.html'
 nav-menu: true
 learning:
-  - title: 'Explore The Central Heating/Chiller Plant'
+  - title: 'Explore The First Floor of the Plant'
     description: >
       Click below to start a tour of the first floor. Be sure to
       click to watch the video in the first room!
-    buttonText: 'Tour The Plant'
+    buttonText: 'Plant Tour Introduction'
     hotspots:
       - 'A video right in front of you when you start (watch this first!)'
       - 'A voice over inside the control room that is through the door to your right when you start.'
+  - title: 'Explore The ENTIRE Heating/Chiller Plan'
+    description: >
+      Click below to start an unrestricted tour of the entire plant giving access to
+      all three floors, the room, and the machine room of the neighboring library.
+    buttonText: 'Full Plant Tour'
 tourPano:
   - enable: true
     startRoom: '1S01_10'
@@ -57,6 +62,10 @@ tourPano:
     enabledHotSpots:
       - '1S01_Welcome'
       - '1S01_Control_Room'
+  - enable: true
+    disablePriority: 'true'
+    startRoom: '1S03_12'
+    urlPrefix: ''
 ---
 The campus of the University of Wisconsin Stout utilizes a central heating and chiller
 facility to provide heating and cooling throughout its buildings. Industrial grade

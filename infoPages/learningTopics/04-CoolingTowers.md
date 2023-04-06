@@ -15,7 +15,7 @@ learning:
       known as the mezzanine (or mezz) just below the cooling towers.
     buttonText: 'Explore the Mezz'
     hotspots:
-      - 'A video hrough the door in front of you, on your right.'
+      - 'A video through the door in front of you, on your right.'
       - 'A video in the back of the mezz, facing the windows.'
 
   - title: 'Explore The Cooling Towers on the Roof'

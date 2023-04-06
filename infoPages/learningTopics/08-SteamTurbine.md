@@ -5,29 +5,25 @@ description: Using thermal energy to create mechanical work
 prevLink: 'infoPages/learningTopics/07-PipingSystem.html'
 upLink: 'infoPages/02-LearningTopics.html'
 nextLink: 'infoPages/learningTopics/09-Compressor.html'
-image: assets/images/Chillers
 nav-menu: false
 show_tile: false
 learning:
   - title: "Learn about the Steam Turbine Pump"
     description: >
-      Description goes here
-    buttonText: 'Steam Turbine'
+      The steam being produced in the plant can also be used to create mechanical energy through the use of a steam turbine.
+    buttonText: 'Steam Turbine Tour'
 tourPano:
-  - enable: false
-    startRoom: 'LS05_20'
+  - enable: true
+    startRoom: 'LN02_11'
+    initialYaw: -35
     urlPrefix: '../'
     enabledRooms:
-      - 'LS05_20'
-      - 'LS05_10b'
-      - 'LS05_11b'
-      - 'LN05_11'
-      - 'LS05_12'
-      - 'LN04_10'
-      - 'LN04_12'
-      - 'LS04_12'
+      - 'LS02_01'
+      - 'LN01_10'
+      - 'LN01_02'
+      - 'LS02_12'
+      - 'LS01_11'
+      - 'LN01_22'
     enabledHotSpots:
-      - 'LS05_DistributionHeader'
-      - 'LN05_DistributionPumps'
+      - 'LN02_Steam_Turbine'
 ---
-Coming soon

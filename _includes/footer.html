@@ -65,7 +65,7 @@
           initialYaw: parseFloat('{{ pano.initialYaw | default: "0" }}'),
           disablePriority: '{{ pano.disablePriority | default: "false" }}' === 'true',
           enableClose: true,
-          enabledRooms,
+          enabledRooms: enabledRooms.length > 1 ? enabledRooms : [],
           enabledHotSpots,
           textColor: 'lightgrey',
           backgroundColor: '#2a2f4a',
