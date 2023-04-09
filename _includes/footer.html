@@ -25,6 +25,7 @@
 
 <!-- Scripts -->
 <script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script>
+<script src="{{ "assets/js/jquery.collapse.min.js" | absolute_url }}"></script>
 <script src="{{ "assets/js/jquery.scrolly.min.js" | absolute_url }}"></script>
 <script src="{{ "assets/js/jquery.scrollex.min.js" | absolute_url }}"></script>
 <script src="{{ "assets/js/skel.min.js" | absolute_url }}"></script>
@@ -32,13 +33,28 @@
 <!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
 <script src="{{ "assets/js/main.js" | absolute_url }}"></script>
 
+<script>
+  $("#animated-collapse").collapse({
+    accordion: true,
+    open: function() {
+      this.addClass("open");
+      this.css({ height: this.children().outerHeight() });
+    },
+    close: function() {
+      this.css({ height: "0px" });
+      this.removeClass("open");
+    }
+  });
+</script>
+
 {% if include.page.tourPano %}
 <!-- Add virtual tour support -->
 <script src="{{ "assets/js/virtualTour.js" | absolute_url }}"></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    // {% for pano in include.page.tourPano %}
+    // {% for panoIndex in include.page.tourPano %}
     {
+      // {% assign pano = site.data.tours[panoIndex] %}
       // Build enabled room array
       const enabledRooms = [
       // {% for room in pano.enabledRooms %}

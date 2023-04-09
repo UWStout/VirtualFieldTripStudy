@@ -1,0 +1,325 @@
+[
+  {
+    "key": "Boiler1",
+    "enabled": true,
+    "startRoom": "1S01_10",
+    "disablePriority": "true",
+    "enabledRooms": [
+      "1S01_10",
+      "1S01_01",
+      "1N01_11",
+      "1N02_12",
+      "1S02_02",
+      "1S02_12"
+    ],
+    "enabledHotSpots": [
+      "1S01_Boiler",
+      "1S01_Burner"
+    ]
+  },
+  {
+    "key": "Boiler2-3",
+    "enabled": true,
+    "startRoom": "1S03_12",
+    "disablePriority": "true",
+    "enabledRooms": [
+      "1N02_12",
+      "1S02_02",
+      "1S02_12",
+      "1S02_11",
+      "1N02_11",
+      "1S03_12",
+      "1S03_02",
+      "1N03_12",
+      "1N03_11",
+      "1N03_10",
+      "1N03_20",
+      "1S03_11",
+      "1S04_12"
+    ],
+    "enabledHotSpots": [
+      "1N02_Boiler2"
+    ]
+  },
+  {
+    "key": "Boiler4",
+    "enabled": true,
+    "startRoom": "1S04_20",
+    "disablePriority": "true",
+    "initialYaw": -25,
+    "enabledRooms": [
+      "1S04_12",
+      "1S04_11",
+      "1S04_20",
+      "1N04_20",
+      "1N04_00",
+      "1N04_01",
+      "1N04_02",
+      "1N04_22",
+      "1N04_10",
+      "2S04_00",
+      "2N04_21"
+    ],
+    "enabledHotSpots": [
+      "1S04_Boiler4",
+      "2N04_Boiler4_Stop_Valves",
+      "2N04_Boiler4_Safety_Valves"
+    ]
+  },
+  {
+    "key": "ChillersFirstFloor",
+    "enabled": true,
+    "startRoom": "1S04_20",
+    "initialYaw": 90,
+    "disablePriority": "true",
+    "enabledRooms": [
+      "1S04_20",
+      "1S05_22",
+      "1S05_21",
+      "1S05_10",
+      "1S05_00",
+      "1S05_11",
+      "1N05_21",
+      "1N05_10",
+      "1N05_11",
+      "1N05_01"
+    ],
+    "enabledHotSpots": [
+      "1S05_Chiller_General",
+      "1S05_Chiller_HX",
+      "1S05_Chiller_Operation",
+      "1S05_ChillerWelcome",
+      "1S05_ChillerComponents"
+    ]
+  },
+  {
+    "key": "WaterTreatment",
+    "enable": true,
+    "startRoom": "1N01_11",
+    "initialYaw": 25,
+    "enabledRooms": [
+      "1W01_11",
+      "1W02_11",
+      "1N01_11",
+      "1N01_00",
+      "2N02_02",
+      "2N01_00",
+      "2N01_11",
+      "2N01_21",
+      "2S01_11"
+    ],
+    "enabledHotSpots": [
+      "1W01_WaterTreat_Mechanical",
+      "1W02_WaterTreat_Chemical",
+      "2N01_Deaerator"
+    ]
+  },
+  {
+    "key": "ChillerSecondFloor",
+    "enable": true,
+    "startRoom": "2S04_20",
+    "initialYaw": 90,
+    "enabledRooms": [
+      "2S04_20",
+      "2S05_12",
+      "2N05_11"
+    ],
+    "enabledHotSpots": [
+      "2S05_ChemicalTreatmentAndPumps",
+      "2N05_BromineAndCutoffs"
+    ]
+  },
+  {
+    "key": "CoolingTowerRoof",
+    "enable": true,
+    "startRoom": "RS03_01b",
+    "initialYaw": 80,
+    "enabledRooms": [
+      "RS03_01b",
+      "RS05_11"
+    ],
+    "enabledHotSpots": [
+      "RS03_CoolingTowerExterior",
+      "RS05_CoolingTowerInterior"
+    ]
+  },
+  {
+    "key": "Economizer",
+    "enable": true,
+    "startRoom": "2S01_11",
+    "initialYaw": 45,
+    "enabledRooms": [
+      "2S01_11",
+      "2N01_21"
+    ],
+    "enabledHotSpots": [
+      "2S01_Economizer"
+    ]
+  },
+  {
+    "key": "LibraryMachineRoom",
+    "enable": true,
+    "startRoom": "1S02_11",
+    "initialYaw": 180,
+    "enabledRooms": [
+      "1S02_11",
+      "LIB_NE",
+      "LIB_NW",
+      "LIB_SE",
+      "LIB_SW"
+    ]
+  },
+  {
+    "key": "ChillerBasement",
+    "enable": true,
+    "startRoom": "LS05_20",
+    "enabledRooms": [
+      "LS05_20",
+      "LS05_10b",
+      "LS05_11b",
+      "LN05_11",
+      "LS05_12",
+      "LN04_10",
+      "LN04_12",
+      "LS04_12"
+    ],
+    "enabledHotSpots": [
+      "LS05_DistributionHeader",
+      "LN05_DistributionPumps"
+    ]
+  },
+  {
+    "key": "BasementSteamTurbine",
+    "enable": true,
+    "startRoom": "LN02_11",
+    "initialYaw": -35,
+    "enabledRooms": [
+      "LS02_01",
+      "LN01_10",
+      "LN01_02",
+      "LS02_12",
+      "LS01_11",
+      "LN01_22"
+    ],
+    "enabledHotSpots": [
+      "LN02_Steam_Turbine"
+    ]
+  },
+  {
+    "key": "AirCompressor",
+    "enable": true,
+    "startRoom": "LS02_01",
+    "initialYaw": -90,
+    "enabledRooms": [
+      "LN02_11",
+      "LN01_10",
+      "LN01_02",
+      "LS02_12",
+      "LS01_11",
+      "LN01_22"
+    ],
+    "enabledHotSpots": [
+      "LS02_Compressor"
+    ]
+  },
+  {
+    "key": "BasementPumps",
+    "enable": true,
+    "startRoom": "LS05_10b",
+    "enabledRooms": [
+      "LS05_11b",
+      "LN05_11"
+    ],
+    "enabledHotSpots": [
+      "LS05_Pump",
+      "LN05_DistributionPumps"
+    ]
+  },
+  {
+    "key": "CombustionFuel",
+    "enable": true,
+    "initialYaw": 15,
+    "startRoom": "1S03_11",
+    "enabledRooms": [
+      "1S03_12",
+      "1S03_02",
+      "1N03_12",
+      "1N03_11",
+      "1N03_10",
+      "1N03_20",
+      "1S03_11"
+    ],
+    "enabledHotSpots": [
+      "1S03_Fuel_Combustion"
+    ]
+  },
+  {
+    "enable": true,
+    "startRoom": "LS03_02",
+    "initialYaw": -35,
+    "enabledRooms": [
+      "LN03_12",
+      "LN02_11",
+      "LS02_01",
+      "LS02_10",
+      "LS03_11"
+    ],
+    "enabledHotSpots": [
+      "LS03_Combustion_Air_Fan"
+    ]
+  },
+  {
+    "key": "FirstFloorOverview",
+    "enable": true,
+    "startRoom": "1S01_10",
+    "urlPrefix": "",
+    "enabledRooms": [
+      "1S01_22",
+      "1W01_11",
+      "1W02_11",
+      "1S01_10",
+      "1S01_01",
+      "1N01_11",
+      "1N02_12",
+      "1S02_02",
+      "1S02_12",
+      "1S02_11",
+      "1N02_11",
+      "1S03_12",
+      "1S03_02",
+      "1N03_12",
+      "1N03_11",
+      "1N03_10",
+      "1N03_20",
+      "1S03_11",
+      "1S04_12",
+      "1S04_11",
+      "1S04_20",
+      "1N04_20",
+      "1N04_00",
+      "1N04_01",
+      "1N04_02",
+      "1N04_22",
+      "1S05_22",
+      "1S05_21",
+      "1S05_10",
+      "1S05_00",
+      "1S05_11",
+      "1N05_21",
+      "1N05_10",
+      "1N05_11",
+      "1N05_01"
+    ],
+    "enabledHotSpots": [
+      "1S01_Welcome",
+      "1S01_Control_Room"
+    ]
+  },
+  {
+    "key": "UnrestrictedTour",
+    "enable": true,
+    "disablePriority": "true",
+    "startRoom": "1S03_12",
+    "urlPrefix": ""
+  }
+]

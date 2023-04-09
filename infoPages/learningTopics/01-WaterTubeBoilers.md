@@ -35,63 +35,9 @@ learning:
       - 'Two on TOP of boiler 4 (up the catwalk on the side)'
 
 tourPano:
-  - enabled: true
-    startRoom: '1S01_10'
-    disablePriority: 'true'
-    urlPrefix: '../'
-    enabledRooms:
-      - '1S01_10' # Boiler 1
-      - '1S01_01'
-      - '1N01_11'
-      - '1N02_12' # Between 1 and 2
-      - '1S02_02'
-      - '1S02_12'
-    enabledHotSpots:
-      - '1S01_Boiler'
-      - '1S01_Burner'
-
-  - enabled: true
-    startRoom: '1S03_12'
-    disablePriority: 'true'
-    urlPrefix: '../'
-    enabledRooms:
-      - '1N02_12' # Between 1 and 2
-      - '1S02_02'
-      - '1S02_12'
-      - '1S02_11' # Boiler 2
-      - '1N02_11'
-      - '1S03_12' # Between 2 and 3
-      - '1S03_02'
-      - '1N03_12'
-      - '1N03_11' # Boiler 3
-      - '1N03_10'
-      - '1N03_20'
-      - '1S03_11'
-      - '1S04_12' # Between 3 and 4
-    enabledHotSpots:
-      - '1N02_Boiler2'
-
-  - enabled: true
-    startRoom: '1S04_20'
-    disablePriority: 'true'
-    urlPrefix: '../'
-    initialYaw: -25
-    enabledRooms:
-      - '1S04_12' # Between 3 and 4
-      - '1S04_11' # Boiler 4
-      - '1S04_20'
-      - '1N04_20'
-      - '1N04_00'
-      - '1N04_01'
-      - '1N04_02'
-      - '1N04_22'
-      - '1N04_10' # Up to top of boiler 4
-      - '2S04_00'
-      - '2N04_21'
-    enabledHotSpots:
-      - '1S04_Boiler4'
-      - '2N04_Boiler4_Stop_Valves'
-      - '2N04_Boiler4_Safety_Valves'
+  - 0
+  - 1
+  - 2
 
 ---
 ## The Four Boilers

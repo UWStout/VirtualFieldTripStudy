@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+Forty by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  {% include head.html page=page %}
+
+    <body>
+    <script type="text/javascript">document.body.classList.add("is-loading");</script>
+
+    {% include header.html page=page %}
+
+    <!-- Main -->
+    <div id="main" class="alt">
+
+      <!-- One -->
+      <section id="one">
+        <div class="inner">
+          <header class="major">
+            <h1>{{ page.title }}</h1>
+          </header>
+
+          {% if page.image %}
+            {% unless page.hideImage %}
+              <span class="image right" style="max-width: 50%;"><img src="{{ site.baseurl }}/{{ page.image }}.png" alt=""/></span>
+            {% endunless %}
+          {% endif %}
+
+          {{ content }}
+
+          {% if page.image %}
+            {% unless page.hideImage %}
+              <div style="clear: both"></div>
+            {% endunless %}
+          {% endif %}
+        </div>
+      </section>
+
+      {% if page.infoLinks %}
+        <section id="two">
+          <div class="inner">
+            <div class="row">
+            {% for link in page.infoLinks %}
+              {% if link.disabled %}
+                <div class="4u 12u$(medium)">
+                  <div class="box">
+                    <header class="major">
+                      <h3>{{ link.name }}<br/>(coming soon)</h3>
+                      <p>{{ link.description }}</p>
+                    </header>
+                  </div>
+                </div>
+              {% else %}
+                <div class="4u 12u$(medium)">
+                  <div class="box tourButton" id="panoTourButton-{{ forloop.index }}">
+                    <header class="major">
+                      <h3>{{ link.name }}</h3>
+                      <p>{{ link.description }}</p>
+                    </header>
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+            </div>
+          </div>
+        </section>
+      {% endif %}
+
+      {% if page.tourButton %}
+        {% assign buttonIndex = page.infoLinks.size | plus: 1 %}
+        <section id="three">
+          <div class="inner">
+            <div class="row">
+              <div class="12u">
+                <div class="box tourButton" id="panoTourButton-{{ buttonIndex }}">
+                  <header class="major">
+                    <h3>{{ page.tourButton.name }}</h3>
+                    <p>{{ page.tourButton.description }}</p>
+                  </header>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      {% endif %}
+
+      <!-- Four -->
+      <section id="four">
+        <div class="inner">
+          <div class="row">
+              <div class="4u">
+                {% if page.prevLink %}
+                <ul class="actions">
+                  <li><a href="{{ page.prevLink  | relative_url }}" class="button prev">Prev Section</a></li>
+                </ul>
+                {% else %}
+                &nbsp;
+                {% endif %}
+              </div>
+
+              <div class="4u" style="text-align: center;">
+                <ul class="actions">
+                  {% if page.upLink %}
+                    <li><a href="{{ page.upLink  | relative_url }}" class="button icon fa-level-up">To Index</a></li>
+                  {% else %}
+                    <li><a href="{{ "" | absolute_url }}/" class="button icon fa-home">Return Home</a></li>
+                  {% endif %}
+                </ul>
+            </div>
+
+              <div class="4u" style="text-align: right;">
+                {% if page.nextLink %}
+                <ul class="actions">
+                  <li><a href="{{ page.nextLink  | relative_url }}" class="button next">Next Section</a></li>
+                </ul>
+                {% else %}
+                &nbsp;
+                {% endif %}
+              </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    {% if page.tourPano %}
+      {% for pano in page.tourPano %}
+        <div id="panoTourRoot-{{ forloop.index }}" class="floatingOverlay"></div>
+      {% endfor %}
+    {% endif %}
+
+    {% include footer.html page=page %}
+
+  </body>
+
+</html>

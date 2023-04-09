@@ -13,6 +13,42 @@
   <!--[if lte IE 9]><link rel="stylesheet" href="{{ "assets/css/ie9.css" | relative_url }}" /><![endif]-->
   <!--[if lte IE 8]><link rel="stylesheet" href="{{ "assets/css/ie8.css" | relative_url }}" /><![endif]-->
 
+  <style>
+    #animated-collapse h3 {
+      border-bottom: 2px solid lightslategrey;
+      margin: 0.7em 0 0.7em 0;
+    }
+
+    #animated-collapse h3:before {
+      content: "► ";
+    }
+
+    #animated-collapse h3.open:before {
+      content: "▼ ";
+    }
+
+    #animated-collapse h3 + div {
+      height: 0px;
+      padding: 0px;
+      overflow: hidden;
+      background: #000;
+      display: block !important;
+      transform: translateZ(0);
+      transition: all 0.3s ease;
+    }
+
+    #animated-collapse .content {
+      padding: 10px;
+      padding-bottom: 5px;
+    }
+
+    #animated-collapse h3.open + div {
+      height: auto;
+      background: #242943;
+      border-bottom: 2px solid lightslategrey;
+    }
+  </style>
+
   {% if include.page.tourPano or include.page.assessment %}
   <style>
     .floatingOverlay {

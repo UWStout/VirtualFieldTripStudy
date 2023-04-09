@@ -11,9 +11,9 @@ show_tile: false
 learning:
   - title: "Explore One of the Air Handling Units"
     description: >
-      Click below to explore the Air Handling Units in the attic of the Library where
-      the steam and chilled water from the central heating and chiller plant gets put
-      to good use!
+      Click below to explore the Air Handling Units in the machine room of the Library where
+      the steam and chilled water from the central heating and chiller plant gets put to good
+      use!
     buttonText: 'Explore the Library AHU'
 tourPano:
   - enable: true
