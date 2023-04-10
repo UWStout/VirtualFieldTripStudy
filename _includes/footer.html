@@ -118,7 +118,8 @@
       document.body.style.overflow = 'auto'
     })
 
-  // {% for form in page.assessment.forms %}
+  // {% for formIndex in page.assessment.forms %}
+  // {% assign form = site.data.assessments[formIndex] %}
   {
     const formButton = document.getElementById('form-{{ form.ID }}-button')
     formButton.addEventListener('click', e => {

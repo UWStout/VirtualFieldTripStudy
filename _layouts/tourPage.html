@@ -65,13 +65,14 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
       <!-- Three -->
       <section id="three">
         <div class="inner">
-            <h2 id="assessments">{{ page.assessment.title }}</h2>
-            <p>{{ page.assessment.description }}</p>
-            {% for form in page.assessment.forms %}
-              <button id="form-{{ form.ID }}-button" class="button big fit">
-                {{ form.text | default: "Take Quiz" }}
-              </button>
-            {% endfor %}
+          <h2 id="assessments">{{ page.assessment.title }}</h2>
+          <p>{{ page.assessment.description }}</p>
+          {% for formIndex in page.assessment.forms %}
+            {% assign form = site.data.assessments[formIndex] %}
+            <button id="form-{{ form.ID }}-button" class="button big fit">
+              {{ form.text | default: "Take Quiz" }}
+            </button>
+          {% endfor %}
         </div>
       </section>
       {% endif %}
@@ -123,7 +124,8 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
     {% if page.assessment %}
       <a href="#" class="button" id="overlayCloseButton">Close</a>
-      {% for form in page.assessment.forms %}
+      {% for formIndex in page.assessment.forms %}
+        {% assign form = site.data.assessments[formIndex] %}
         <div id="form-{{ form.ID }}-root" class="floatingOverlay">
           <iframe
             id="form-{{ form.ID }}-frame"

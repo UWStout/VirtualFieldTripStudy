@@ -9,12 +9,7 @@ nav-menu: true
 assessment:
   title: 'What Have You Learned'
   description: ''
-  forms:
-    - ID: 'o4Eat5UvgUObicYjQ6ZgUhBH9HhOC8lPtzEqifJT6clUOVFHNE80NTFNN1RCRjlZMk0zVFpERDJBVC4u'
-      text: 'Heating and Water Properties Quiz'
-    - ID: 'o4Eat5UvgUObicYjQ6ZgUhBH9HhOC8lPtzEqifJT6clUOUNGQU1FNFhMRTBLREc1RENEOUwyREtLQy4u'
-      text: 'Refrigeration Cycles Quiz'
+  forms: [0, 1, 2, 3, 4, 5, 6, 7, 8]
 ---
-After your virtual field trip of the central heating and chiller plant, we would like to know
-what you have learned. Click on the buttons below to take a quiz covering some of the
-thermodynamics concepts that are present in the central heating and chiller plant.
+The following quizzes are designed to help you assess your knowledge of the topics covered
+in the different learning opportunities on the previous page.
