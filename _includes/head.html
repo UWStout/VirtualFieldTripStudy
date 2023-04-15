@@ -13,21 +13,75 @@
   <!--[if lte IE 9]><link rel="stylesheet" href="{{ "assets/css/ie9.css" | relative_url }}" /><![endif]-->
   <!--[if lte IE 8]><link rel="stylesheet" href="{{ "assets/css/ie8.css" | relative_url }}" /><![endif]-->
 
+  {% if include.page.tabContent %}
+  <link rel="stylesheet" href="{{ "assets/css/jquery-ui.min.css" | relative_url }}"/>
+  {% endif %}
+
   <style>
-    #animated-collapse h3 {
+    .invisible-button {
+      position: absolute;
+      color: transparent;
+      border-radius: 6px;
+      background-color: transparent;
+      cursor: pointer;
+      overflow: hidden;
+      font-size: 6pt;
+      transition: border-color 0.3s ease;
+      border: 2px dashed transparent;
+    }
+
+    .invisible-button:hover {
+      border-color: slategray;
+    }
+
+    .invisible-button.vertical {
+      transform-origin: top left;
+      transform: rotate(-90deg);
+    }
+
+    .invisible-button.vertical-right {
+      transform-origin: top right;
+      transform: rotate(-90deg);
+    }
+
+    .ui-tabs-nav {
+      background-color: rgb(36, 41, 67);
+      border: 0px;
+      padding: 0;
+      text-align: center;
+    }
+
+    a.ui-tabs-anchor {
+      transition: all 0.3s ease;
+    }
+
+    li:not(.ui-state-active) a.ui-tabs-anchor:hover {
+      background-color: #9bf1ff !important;
+      color: #454545 !important;
+    }
+
+    li.ui-state-active a.ui-tabs-anchor:hover {
+      background-color: #007fff !important;
+      color: white !important;
+    }
+  </style>
+
+  {% if include.page.collapseContent %}
+  <style>
+    .animated-collapse h3 {
       border-bottom: 2px solid lightslategrey;
       margin: 0.7em 0 0.7em 0;
     }
 
-    #animated-collapse h3:before {
+    .animated-collapse h3:before {
       content: "► ";
     }
 
-    #animated-collapse h3.open:before {
+    .animated-collapse h3.open:before {
       content: "▼ ";
     }
 
-    #animated-collapse h3 + div {
+    .animated-collapse h3 + div {
       height: 0px;
       padding: 0px;
       overflow: hidden;
@@ -37,17 +91,18 @@
       transition: all 0.3s ease;
     }
 
-    #animated-collapse .content {
+    .animated-collapse .content {
       padding: 10px;
       padding-bottom: 5px;
     }
 
-    #animated-collapse h3.open + div {
+    .animated-collapse h3.open + div {
       height: auto;
       background: #242943;
       border-bottom: 2px solid lightslategrey;
     }
   </style>
+  {% endif %}
 
   {% if include.page.tourPano or include.page.assessment %}
   <style>

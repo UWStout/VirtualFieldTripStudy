@@ -45,7 +45,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             <div class="inner">
               <h2 id="tour">{{ learn.title }}</h2>
               <p>{{ learn.description }}</p>
-              <button id="panoTourButton-{{ forloop.index }}" class="tourButton button big fit icon fa-vr-cardboard">
+              <button class="panoTourButton-{{ forloop.index }} tourButton button big fit icon fa-vr-cardboard">
                 {{ learn.buttonText | default: "Start Tour" }}
               </button>
               {% if learn.hotspots %}

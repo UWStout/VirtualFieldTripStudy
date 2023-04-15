@@ -4,7 +4,7 @@ title: Learning Topics
 description: Dive into your virtual field trip!
 image: assets/images/Boiler1
 prevLink: 'infoPages/01-FacilityOverview.html'
-nextLink: 'infoPages/03-Assessments.html'
+nextLink: 'infoPages/03-LearningMaps.html'
 hideImage: true
 nav-menu: true
 tourPano: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16]

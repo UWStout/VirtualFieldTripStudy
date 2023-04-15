@@ -2,10 +2,11 @@
 layout: tourPage
 title: Fun Facts
 description: More interesting facts about the central heating and chiller plant and thermodynamics.
-prevLink: 'infoPages/03-Assessments.html'
+prevLink: 'infoPages/04-Assessments.html'
 image: assets/images/FunFacts-Image2
 hideImage: true
 nav-menu: true
+collapseContent: [funFactsCollapse]
 ---
 <h2>(Fun) Facts about Thermodynamics, Heating Plant</h2>
 <p>Below are a collection of interesting facts and answers to questions about the central heating plant and
@@ -13,7 +14,7 @@ thermodynamics in general.</p>
 
 <h4 style="text-align: center; padding-bottom: 20px;">>> CLICK on a question to reveal the answer <<</h4>
 
-<div id="animated-collapse" data-collapse="accordion">
+<div id="funFactsCollapse" class="animated-collapse" data-collapse="accordion">
   <h3>WHAT IS THE TALLEST STRUCTURE IN MENOMONIE, WISCONSIN?</h3>
   <div><div class="content">
     <p>At 240 feet and 4-inch height, the red chimney of Stout’s heating plant is one of the tallest structures

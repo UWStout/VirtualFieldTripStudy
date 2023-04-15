@@ -25,7 +25,6 @@
 
 <!-- Scripts -->
 <script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script>
-<script src="{{ "assets/js/jquery.collapse.min.js" | absolute_url }}"></script>
 <script src="{{ "assets/js/jquery.scrolly.min.js" | absolute_url }}"></script>
 <script src="{{ "assets/js/jquery.scrollex.min.js" | absolute_url }}"></script>
 <script src="{{ "assets/js/skel.min.js" | absolute_url }}"></script>
@@ -33,19 +32,44 @@
 <!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
 <script src="{{ "assets/js/main.js" | absolute_url }}"></script>
 
+{% if include.page.collapseContent %}
+<script src="{{ "assets/js/jquery.collapse.min.js" | absolute_url }}"></script>
 <script>
-  $("#animated-collapse").collapse({
+  // {% for collapseID in include.page.collapseContent %}
+  $('#{{ collapseID }}').collapse({
     accordion: true,
     open: function() {
-      this.addClass("open");
+      this.addClass('open');
       this.css({ height: this.children().outerHeight() });
     },
     close: function() {
-      this.css({ height: "0px" });
-      this.removeClass("open");
+      this.css({ height: '0px' });
+      this.removeClass('open');
     }
   });
+  // {% endfor %}
 </script>
+{% endif %}
+
+{% if include.page.tabContent %}
+<script src="{{ "assets/js/jquery-ui.min.js" | absolute_url }}"></script>
+<script>
+  // {% for tabID in include.page.tabContent %}
+  $('#{{ #tabID }}').tabs()
+  // {% endfor %}
+</script>
+{% endif %}
+
+{% if include.page.infoLinksAttach %}
+<script>
+  const infoLinks = document.querySelector('#two')
+  const attachPoint = document.querySelector('#{{ include.page.infoLinksAttach }}')
+  if (infoLinks && attachPoint) {
+    infoLinks.parentNode.removeChild(infoLinks)
+    attachPoint.appendChild(infoLinks)
+  }
+</script>
+{% endif %}
 
 {% if include.page.tourPano %}
 <!-- Add virtual tour support -->
@@ -72,22 +96,27 @@
       // {% endfor %}
       ].filter(element => !!element)
 
-      // Prepare the tour by attaching to the standard elements
-      attachVirtualTour(
-        document.getElementById('panoTourButton-{{ forloop.index }}'),
-        document.getElementById('panoTourRoot-{{ forloop.index }}'),
-        {
-          startingRoom: '{{ pano.startRoom | default: "" }}',
-          initialYaw: parseFloat('{{ pano.initialYaw | default: "0" }}'),
-          disablePriority: '{{ pano.disablePriority | default: "false" }}' === 'true',
-          enableClose: true,
-          enabledRooms: enabledRooms.length > 1 ? enabledRooms : [],
-          enabledHotSpots,
-          textColor: 'lightgrey',
-          backgroundColor: '#2a2f4a',
-          urlPrefix: '{{ pano.urlPrefix }}'
-        }
-      )
+      // Prepare the tour root element and config
+      const rootElement = document.getElementById('panoTourRoot-{{ forloop.index }}')
+      const config = {
+        startingRoom: '{{ pano.startRoom | default: "" }}',
+        initialYaw: parseFloat('{{ pano.initialYaw | default: "0" }}'),
+        disablePriority: '{{ pano.disablePriority | default: "false" }}' === 'true',
+        enableClose: true,
+        enabledRooms: enabledRooms.length > 1 ? enabledRooms : [],
+        enabledHotSpots,
+        textColor: 'lightgrey',
+        backgroundColor: '#2a2f4a',
+        urlPrefix: '{{ pano.urlPrefix }}'
+      }
+
+      // Attach to all matching buttons
+      console.log('.panoTourButton-{{ forloop.index }}')
+      const panoButtons = document.querySelectorAll('.panoTourButton-{{ forloop.index }}')
+      console.log(panoButtons)
+      panoButtons.forEach(panoButton => {
+        attachVirtualTour(panoButton, rootElement, config)
+      })
     }
     // {% endfor %}
   })
