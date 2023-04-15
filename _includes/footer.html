@@ -111,9 +111,7 @@
       }
 
       // Attach to all matching buttons
-      console.log('.panoTourButton-{{ forloop.index }}')
       const panoButtons = document.querySelectorAll('.panoTourButton-{{ forloop.index }}')
-      console.log(panoButtons)
       panoButtons.forEach(panoButton => {
         attachVirtualTour(panoButton, rootElement, config)
       })
