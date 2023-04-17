@@ -2,7 +2,7 @@
 layout: tourPage
 title: Fun Facts
 description: More interesting facts about the central heating and chiller plant and thermodynamics.
-prevLink: 'infoPages/04-Assessments.html'
+prevLink: 'infoPages/03-Assessments.html'
 image: assets/images/FunFacts-Image2
 hideImage: true
 nav-menu: true

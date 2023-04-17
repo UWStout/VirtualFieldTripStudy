@@ -113,7 +113,8 @@
       // Attach to all matching buttons
       const panoButtons = document.querySelectorAll('.panoTourButton-{{ forloop.index }}')
       panoButtons.forEach(panoButton => {
-        attachVirtualTour(panoButton, rootElement, config)
+        const overrides = $(panoButton)?.data('overrides') ?? {}
+        attachVirtualTour(panoButton, rootElement, { ...config, ...overrides })
       })
     }
     // {% endfor %}

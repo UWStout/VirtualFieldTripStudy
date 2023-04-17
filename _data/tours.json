@@ -150,10 +150,12 @@
     "initialYaw": 45,
     "enabledRooms": [
       "2S01_11",
-      "2N01_21"
+      "2N01_21",
+      "2N01_11"
     ],
     "enabledHotSpots": [
-      "2S01_Economizer"
+      "2S01_Economizer",
+      "2N01_Deaerator"
     ]
   },
   {
@@ -215,6 +217,7 @@
       "LN01_10",
       "LN01_02",
       "LS02_12",
+      "LS02_10",
       "LS01_11",
       "LN01_22"
     ],
@@ -226,13 +229,19 @@
     "key": "BasementPumps",
     "enable": true,
     "startRoom": "LS05_10b",
+    "initialYaw": -45,
     "enabledRooms": [
       "LS05_11b",
-      "LN05_11"
+      "LS05_12",
+      "LN05_11",
+      "LN04_12",
+      "LN04_10",
+      "LS04_12"
     ],
     "enabledHotSpots": [
       "LS05_Pump",
-      "LN05_DistributionPumps"
+      "LN05_DistributionPumps",
+      "LS05_DistributionHeader"
     ]
   },
   {
@@ -321,5 +330,56 @@
     "disablePriority": "true",
     "startRoom": "1S03_12",
     "urlPrefix": ""
+  },
+  {
+    "key": "Feed Pumps and Blower",
+    "enable": true,
+    "startRoom": "LN03_12",
+    "initialYaw": -60,
+    "enabledRooms": [
+      "LN02_11",
+      "LS02_01",
+      "LS02_10",
+      "LS03_11",
+      "LS03_02"
+    ],
+    "enabledHotSpots": [
+      "LS02_Compressor",
+      "LS03_Combustion_Air_Fan"
+    ]
+  },
+  {
+    "key": "2nd Floor Boilers",
+    "enable": true,
+    "startRoom": "2N04_21",
+    "initialYaw": -100,
+    "enabledRooms": [
+      "2S04_10",
+      "2N04_21",
+      "2N04_22",
+      "2S04_12",
+      "2S03_10",
+      "2S03_12",
+      "2S04_12",
+      "2N03_10",
+      "2N03_21",
+      "2N03_22",
+      "2N03_10",
+      "2S03_02",
+      "2S02_10",
+      "2N02_21",
+      "2N02_12",
+      "2S02_12",
+      "2S01_11",
+      "2N01_21",
+      "2N01_11",
+      "2S01_11"
+    ],
+    "enabledHotSpots": [
+      "2N01_Deaerator",
+      "2N04_Boiler4_Safety_Valves",
+      "2N04_Boiler4_Stop_Valves",
+      "2S01_Economizer"
+    ]
   }
 ]
