@@ -15,7 +15,8 @@
     "enabledHotSpots": [
       "1S01_Boiler",
       "1S01_Burner"
-    ]
+    ],
+    "assessment": [1, 5, 8]
   },
   {
     "key": "Boiler2-3",
@@ -39,7 +40,8 @@
     ],
     "enabledHotSpots": [
       "1N02_Boiler2"
-    ]
+    ],
+    "assessment": [1, 5, 8]
   },
   {
     "key": "Boiler4",
@@ -64,7 +66,8 @@
       "1S04_Boiler4",
       "2N04_Boiler4_Stop_Valves",
       "2N04_Boiler4_Safety_Valves"
-    ]
+    ],
+    "assessment": [1, 5, 8]
   },
   {
     "key": "ChillersFirstFloor",
@@ -90,7 +93,8 @@
       "1S05_Chiller_Operation",
       "1S05_ChillerWelcome",
       "1S05_ChillerComponents"
-    ]
+    ],
+    "assessment": [2, 3, 4]
   },
   {
     "key": "WaterTreatment",
@@ -111,8 +115,10 @@
     "enabledHotSpots": [
       "1W01_WaterTreat_Mechanical",
       "1W02_WaterTreat_Chemical",
-      "2N01_Deaerator"
-    ]
+      "2N01_Deaerator",
+      "2S01_ DeaeratorOperations"
+    ],
+    "assessment": [0, 1, 7]
   },
   {
     "key": "ChillerSecondFloor",
@@ -127,7 +133,8 @@
     "enabledHotSpots": [
       "2S05_ChemicalTreatmentAndPumps",
       "2N05_BromineAndCutoffs"
-    ]
+    ],
+    "assessment": [2, 3, 4]
   },
   {
     "key": "CoolingTowerRoof",
@@ -140,8 +147,10 @@
     ],
     "enabledHotSpots": [
       "RS03_CoolingTowerExterior",
-      "RS05_CoolingTowerInterior"
-    ]
+      "RS05_CoolingTowerInterior",
+      "RS05_CoolingTower"
+    ],
+    "assessment": [2, 3, 4]
   },
   {
     "key": "Economizer",
@@ -155,8 +164,10 @@
     ],
     "enabledHotSpots": [
       "2S01_Economizer",
-      "2N01_Deaerator"
-    ]
+      "2N01_Deaerator",
+      "2S01_ DeaeratorOperations"
+    ],
+    "assessment": [0, 1, 7]
   },
   {
     "key": "LibraryMachineRoom",
@@ -169,7 +180,11 @@
       "LIB_NW",
       "LIB_SE",
       "LIB_SW"
-    ]
+    ],
+    "enabledHotSpots": [
+      "LIB_AHUs"
+    ],
+    "assessment": [0, 1, 7]
   },
   {
     "key": "ChillerBasement",
@@ -186,9 +201,11 @@
       "LS04_12"
     ],
     "enabledHotSpots": [
+      "LS05_Pump",
       "LS05_DistributionHeader",
       "LN05_DistributionPumps"
-    ]
+    ],
+    "assessment": [2, 3, 4]
   },
   {
     "key": "BasementSteamTurbine",
@@ -204,8 +221,11 @@
       "LN01_22"
     ],
     "enabledHotSpots": [
-      "LN02_Steam_Turbine"
-    ]
+      "LS02_Compressor",
+      "LN02_Steam_Turbine",
+      "LS01_Holding_Tank"
+    ],
+    "assessment": [6]
   },
   {
     "key": "AirCompressor",
@@ -222,8 +242,11 @@
       "LN01_22"
     ],
     "enabledHotSpots": [
-      "LS02_Compressor"
-    ]
+      "LS02_Compressor",
+      "LN02_Steam_Turbine",
+      "LS01_Holding_Tank"
+    ],
+    "assessment": [2]
   },
   {
     "key": "BasementPumps",
@@ -242,7 +265,8 @@
       "LS05_Pump",
       "LN05_DistributionPumps",
       "LS05_DistributionHeader"
-    ]
+    ],
+    "assessment": [2]
   },
   {
     "key": "CombustionFuel",
@@ -260,7 +284,8 @@
     ],
     "enabledHotSpots": [
       "1S03_Fuel_Combustion"
-    ]
+    ],
+    "assessment": [0, 1, 7]
   },
   {
     "enable": true,
@@ -275,7 +300,8 @@
     ],
     "enabledHotSpots": [
       "LS03_Combustion_Air_Fan"
-    ]
+    ],
+    "assessment": [2]
   },
   {
     "key": "FirstFloorOverview",
@@ -322,7 +348,8 @@
     "enabledHotSpots": [
       "1S01_Welcome",
       "1S01_Control_Room"
-    ]
+    ],
+    "assessment": [0, 1, 7]
   },
   {
     "key": "UnrestrictedTour",
@@ -345,8 +372,11 @@
     ],
     "enabledHotSpots": [
       "LS02_Compressor",
-      "LS03_Combustion_Air_Fan"
-    ]
+      "LS03_Combustion_Air_Fan",
+      "LN02_Steam_Turbine",
+      "LS01_Holding_Tank"
+    ],
+    "assessment": [2]
   },
   {
     "key": "2nd Floor Boilers",
@@ -380,6 +410,7 @@
       "2N04_Boiler4_Safety_Valves",
       "2N04_Boiler4_Stop_Valves",
       "2S01_Economizer"
-    ]
+    ],
+    "assessment": [1, 5, 8]
   }
 ]

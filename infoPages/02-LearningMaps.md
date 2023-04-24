@@ -8,6 +8,7 @@ nextLink: 'infoPages/03-Assessments.html'
 hideImage: true
 nav-menu: true
 tabContent: [mapTabs]
+dialogContent: [quizDialog]
 infoLinksAttach: mapTabs-3
 tourPano: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 17, 18]
 infoLinks:
@@ -204,4 +205,12 @@ The last tab simply lists all the learning opportunities so you can catch any th
   <div id="mapTabs-3">
   </div>
 
+</div>
+
+<div id="quizDialog" title="Time for a Quiz">
+  <p>
+    <span class="ui-icon  ui-icon-pencil" style="float:left; margin:0 7px 50px 0;"></span>
+    Would you like to take the quiz for this learning opportunity?
+  </p>
+  <p id="quizDialogDetails">[details go here]</p>
 </div>

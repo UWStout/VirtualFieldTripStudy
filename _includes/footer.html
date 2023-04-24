@@ -31,6 +31,8 @@
 <script src="{{ "assets/js/util.js" | absolute_url }}"></script>
 <!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
 <script src="{{ "assets/js/main.js" | absolute_url }}"></script>
+<script src="{{ "assets/js/basil.min.js" | absolute_url }}"></script>
+<script src="{{ "assets/js/tourProgress.js" | absolute_url }}"></script>
 
 {% if include.page.collapseContent %}
 <script src="{{ "assets/js/jquery.collapse.min.js" | absolute_url }}"></script>
@@ -51,11 +53,38 @@
 </script>
 {% endif %}
 
-{% if include.page.tabContent %}
+{% if include.page.tabContent or include.page.dialogContent%}
 <script src="{{ "assets/js/jquery-ui.min.js" | absolute_url }}"></script>
+{% endif %}
+
+{% if include.page.tabContent %}
 <script>
   // {% for tabID in include.page.tabContent %}
-  $('#{{ #tabID }}').tabs()
+  $('#{{ tabID }}').tabs()
+  // {% endfor %}
+</script>
+{% endif %}
+
+{% if include.page.dialogContent %}
+<script>
+  // {% for dialogID in include.page.dialogContent %}
+  $('#{{ dialogID }}').dialog({
+    autoOpen: false,
+    resizable: false,
+    height: "auto",
+    width: 400,
+    modal: true,
+    show: 'fade',
+    hide: 'fade',
+    buttons: {
+      Ok: function () {
+        $( this ).dialog( "close" );
+      },
+      Cancel: function () {
+        $( this ).dialog( "close" );
+      }
+    }
+  })
   // {% endfor %}
 </script>
 {% endif %}

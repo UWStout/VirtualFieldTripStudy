@@ -13,8 +13,13 @@
   <!--[if lte IE 9]><link rel="stylesheet" href="{{ "assets/css/ie9.css" | relative_url }}" /><![endif]-->
   <!--[if lte IE 8]><link rel="stylesheet" href="{{ "assets/css/ie8.css" | relative_url }}" /><![endif]-->
 
-  {% if include.page.tabContent %}
+  {% if include.page.tabContent or include.page.dialogContent %}
   <link rel="stylesheet" href="{{ "assets/css/jquery-ui.min.css" | relative_url }}"/>
+  <style>
+    .ui-widget-overlay {
+      opacity: 0.5;
+    }
+  </style>
   {% endif %}
 
   <style>

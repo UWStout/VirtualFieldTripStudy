@@ -13,3 +13,7 @@ assessment:
 ---
 The following quizzes are designed to help you assess your knowledge of the topics covered
 in the different learning opportunities on the previous page.
+
+NOTE: When you click on a learning opportunity and finish the experience you will automatically be
+prompted to take the assessment that is most relevant.  These links are here just in case you want
+to take them on your own.
