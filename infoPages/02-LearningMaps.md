@@ -14,38 +14,53 @@ tourPano: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 17, 18]
 infoLinks:
   - name: 'Boiler #1'
     description: 'The oldest boiler in the plant'
+    image: "BoilersIcon.png"
   - name: "Boilers #2 and #3"
     description: The twin boilers in the middle
+    image: "BoilersIcon.png"
   - name: 'Boiler #4'
     description: The newest boiler in the plant
+    image: "BoilersIcon.png"
 
   - name: 'Centrifugal Chillers'
     description: The essential equipment of the chilling plant
+    image: "CentrifugalChillersIcon.png"
   - name: 'Water Treatment'
     description: Preparation of the water used throughout the plant
+    image: "WaterTreatmentIcon.png"
   - name: 'Chiller Power & Pumps'
     description: The 'mez' (2nd floor) of the chilling plant
+    image: "PumpsIcon.png"
   - name: 'Cooling Towers'
     description: Releasing heat from the refrigeration cycle
+    image: "CoolingTowersIcon.png"
 
   - name: 'Economizer'
     description: Recapturing some energy before it leaves the plant
+    image: "EconomizerIcon.png"
   - name: 'Library Air Handler'
     description: Where the heated or chilled water gets used
+    image: "LibraryAirHandlerIcon.png"
   - name: 'Piping System'
     description: The piping system distributes the heating/chilling medium
+    image: "PipingSystemIcon.png"
 
   - name: 'Steam Turbine'
     description: Using thermal energy to create mechanical work
+    image: "SteamTurbineIcon.png"
   - name: 'Air Compressor'
     description: Generating Compressed Air for the Plant
+    image: "AirCompressorIcon.png"
   - name: 'Pumps'
     description: Creating pressure to distribute the heating/cooling medium
+    image: "PumpsIcon.png"
 
   - name: 'Combustion Fuel'
     description: An essential ingredient to create thermal energy
+    image: "CombustionFuelIcon.png"
   - name: 'Combustion Air Fan'
     description: Good air flow is necessary to maintain combustion
+    image: "CombustionAirFanIcon.png"
 tourButton:
   name: 'Free Roaming Tour'
   description: 'Click here to freely walk the entire facility with all topics available'

@@ -29,6 +29,33 @@ thermodynamics in general.</p>
   </ul>
   <div id="factCategories-1">
     <div id="funFactsCollapse1" class="animated-collapse" data-collapse="accordion">
+
+      <h3>SNAPSHOT OF UW- STOUT’S DISTRICT ENERGY SYSTEM</h3>
+      <div><div class="content">
+
+        <figure style="margin-bottom: 24px;text-align: center;">
+          <img
+            style="width: 80%;"
+            src="{% link assets/images/snapshot.png %}"
+            alt=""
+          />
+          <br/>
+        </figure>
+      </div></div>
+
+      <h3>BOILER INVENTORY</h3>
+      <div><div class="content">
+
+        <figure style="margin-bottom: 24px;text-align: center;">
+          <img
+            style="width: 80%;"
+            src="{% link assets/images/boilerInventory.png %}"
+            alt=""
+          />
+          <br/>
+        </figure>
+      </div></div>
+
       <h3>WHAT IS THE TALLEST STRUCTURE IN MENOMONIE, WISCONSIN?</h3>
       <div><div class="content">
         <p>At 240 feet and 4-inch height, the red chimney of Stout’s heating plant is one of the tallest structures
