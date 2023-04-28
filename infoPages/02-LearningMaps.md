@@ -15,7 +15,7 @@ infoLinks:
   - name: 'Boiler #1'
     description: 'The oldest boiler in the plant'
     image: 'BoilersIcon.png'
-  - name: 'Boilers #2 and #3'
+  - name: 'Boilers #2 & #3'
     description: The twin boilers in the middle
     image: 'BoilersIcon.png'
   - name: 'Boiler #4'
