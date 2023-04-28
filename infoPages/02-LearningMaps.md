@@ -22,13 +22,13 @@ infoLinks:
     description: The newest boiler in the plant
     image: 'BoilersIcon.png'
 
-  - name: 'Centrifugal<br>Chillers'
+  - name: 'Centrifugal Chillers'
     description: The essential equipment of the chilling plant
     image: 'CentrifugalChillersIcon.png'
   - name: 'Water Treatment'
     description: Preparation of the water used throughout the plant
     image: 'WaterTreatmentIcon.png'
-  - name: 'Chiller Power<br>& Pumps'
+  - name: 'Chiller Power & Pumps'
     description: The 'mez' (2nd floor) of the chilling plant
     image: 'PumpsIcon.png'
   - name: 'Cooling Towers'
@@ -38,7 +38,7 @@ infoLinks:
   - name: 'Economizer'
     description: Recapturing some energy before it leaves the plant
     image: 'EconomizerIcon.png'
-  - name: 'Library Air<br>Handler'
+  - name: 'Library Air Handler'
     description: Where the heated or chilled water gets used
     image: 'LibraryAirHandlerIcon.png'
   - name: 'Piping System'
@@ -58,7 +58,7 @@ infoLinks:
   - name: 'Combustion Fuel'
     description: An essential ingredient to create thermal energy
     image: 'CombustionFuelIcon.png'
-  - name: 'Combustion<br>Air Fan'
+  - name: 'Combustion Air Fan'
     description: Good air flow is necessary to maintain combustion
     image: 'CombustionAirFanIcon.png'
 tourButton:

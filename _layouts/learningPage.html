@@ -43,24 +43,41 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
           <div class="inner">
             <div class="row">
             {% for link in page.infoLinks %}
+              {% assign imageURL = link.image | prepend: "assets/images/icons/" %}
               {% if link.disabled %}
                 <div class="4u 12u$(medium)">
                   <div class="box">
-                    <header class="major" style="position: relative;">
-                      <img src="{{ link.image | prepend: "assets/images/icons/" | absolute_url }}" alt="" style="position: absolute; right: 0; width:50px; height:50px;"/>
-                      <h3 style="border-bottom: 1px solid #ddd;">{{ link.name }} <br/>(coming soon)</h3>
-                      <p>{{ link.description }}</p>
-                    </header>
+                    <div class="row">
+                      <div class="8u" style="min-height: 5em;">
+                        <h3>{{ link.name }} <br />(coming soon)</h3>
+                      </div>
+                      <div class="4u">
+                        <img src="{{ imageURL | absolute_url }}" alt="" style="height: 55px;"/>
+                      </div>
+                      <div class="12u">
+                        <p style="border-top: 1px solid #ddd; padding-top: 8px;">
+                          {{ link.description }}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               {% else %}
                 <div class="4u 12u$(medium)">
                   <div class="box tourButton panoTourButton-{{ forloop.index }}">
-                    <header class="major" style="position: relative;">
-                      <img src="{{ link.image | prepend: "assets/images/icons/" | absolute_url }}" alt="" style="position: absolute; right: 0; width:50px; height:50px;"/>
-                      <h3 style="border-bottom: 1px solid #ddd;">{{ link.name }}</h3>
-                      <p>{{ link.description }}</p>
-                    </header>
+                    <div class="row">
+                      <div class="8u" style="min-height: 5em;">
+                        <h3>{{ link.name }}</h3>
+                      </div>
+                      <div class="4u">
+                        <img src="{{ imageURL | absolute_url }}" alt="" style="height: 55px;"/>
+                      </div>
+                      <div class="12u">
+                        <p style="border-top: 1px solid #ddd; padding-top: 8px;">
+                          {{ link.description }}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               {% endif %}
