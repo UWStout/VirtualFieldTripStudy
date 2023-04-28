@@ -46,8 +46,9 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
               {% if link.disabled %}
                 <div class="4u 12u$(medium)">
                   <div class="box">
-                    <header class="major">
-                      <h3>{{ link.name }} <img src="{{ link.image }}" alt="" style="width:70px;height:70px;"/><br/>(coming soon)</h3>
+                    <header class="major" style="position: relative;">
+                      <img src="{{ link.image | prepend: "assets/images/icons/" | absolute_url }}" alt="" style="position: absolute; right: 0; width:50px; height:50px;"/>
+                      <h3 style="border-bottom: 1px solid #ddd;">{{ link.name }} <br/>(coming soon)</h3>
                       <p>{{ link.description }}</p>
                     </header>
                   </div>
@@ -56,8 +57,8 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 <div class="4u 12u$(medium)">
                   <div class="box tourButton panoTourButton-{{ forloop.index }}">
                     <header class="major" style="position: relative;">
-                      <img src="{{ link.image | prepend: "assets/images/icons/" | absolute_url }}" alt="" style="position: absolute; right: 0; width:70px; height:70px;"/>
-                      <h3>{{ link.name }}</h3>
+                      <img src="{{ link.image | prepend: "assets/images/icons/" | absolute_url }}" alt="" style="position: absolute; right: 0; width:50px; height:50px;"/>
+                      <h3 style="border-bottom: 1px solid #ddd;">{{ link.name }}</h3>
                       <p>{{ link.description }}</p>
                     </header>
                   </div>

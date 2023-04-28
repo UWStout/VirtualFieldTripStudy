@@ -57,7 +57,7 @@ infoLinks:
 
   - name: 'Combustion Fuel'
     description: An essential ingredient to create thermal energy
-    image: 'CombustionFuelIcon.png"'
+    image: 'CombustionFuelIcon.png'
   - name: 'Combustion<br>Air Fan'
     description: Good air flow is necessary to maintain combustion
     image: 'CombustionAirFanIcon.png'
