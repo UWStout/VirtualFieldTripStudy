@@ -187,23 +187,16 @@
     "assessment": [0, 1, 7]
   },
   {
-    "key": "ChillerBasement",
+    "key": "PipingSystem",
     "enable": true,
-    "startRoom": "LS05_20",
+    "startRoom": "2S01_11",
     "enabledRooms": [
-      "LS05_20",
-      "LS05_10b",
-      "LS05_11b",
-      "LN05_11",
-      "LS05_12",
-      "LN04_10",
-      "LN04_12",
-      "LS04_12"
+      "2S02_12",
+      "2S02_10",
+      "2S03_12"
     ],
     "enabledHotSpots": [
-      "LS05_Pump",
-      "LS05_DistributionHeader",
-      "LN05_DistributionPumps"
+      "2S01_Piping_System"
     ],
     "assessment": [2, 3, 4]
   },
