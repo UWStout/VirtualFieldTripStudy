@@ -1,6 +1,8 @@
 ---
 layout: tourPage
 title: Site Navigation and Tips
+menuIcon: assets/images/SiteNavigationAndTipsIcon.png
+backgroundIcon: assets/images/SiteNavigationAndTipsIconBlue.png
 description: How to use the Heating Plant Virtual Field Trip Site
 image: assets/images/Piping
 nav-menu: true

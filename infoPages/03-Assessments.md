@@ -1,6 +1,8 @@
 ---
 layout: tourPage
 title: Assessments
+menuIcon: assets/images/AssessmentsIcon.png
+backgroundIcon: assets/images/AssessmentsIconBlue.png
 description: Tell us what you know
 prevLink: 'infoPages/02-LearningMaps.html'
 nextLink: 'infoPages/04-FunFacts.html'

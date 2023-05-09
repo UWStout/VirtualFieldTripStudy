@@ -1,6 +1,8 @@
 ---
 layout: tourPage
 title: Facility Overview
+menuIcon: assets/images/FacilityOverviewIcon.png
+backgroundIcon: assets/images/FacilityOverviewIconBlue.png
 description: Introducing the central heating and chiller plant
 image: assets/images/HeatingPlant-Closeup
 nextLink: 'infoPages/02-LearningMaps.html'

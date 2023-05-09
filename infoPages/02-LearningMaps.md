@@ -1,6 +1,8 @@
 ---
 layout: learningPage
 title: Learning Opportunities
+menuIcon: assets/images/LearningOpportunitiesIcon.png
+backgroundIcon: assets/images/LearningOpportunitiesIconBlue.png
 description: Dive into your virtual field trip!
 image: assets/images/Boiler3-4-View
 prevLink: 'infoPages/01-FacilityOverview.html'
