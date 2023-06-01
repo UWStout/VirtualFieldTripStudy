@@ -46,14 +46,14 @@
 
 			on = function() {
 
-				$t.css('background-position', 'center 100%, center 100%, center 0px');
+				$t.children('video').css('inset', '0px');
 
 				$window
 					.on('scroll._parallax', function() {
 
 						var pos = parseInt($window.scrollTop()) - parseInt($t.position().top);
-
-						$t.css('background-position', 'center ' + (pos * (-1 * intensity)) + 'px');
+            $t.children('video').css('inset', '' + (pos * (-1 * intensity)) + 'px 0px 0px');
+						// $t.css('top', '' + (pos * (-1 * intensity)) + 'px');
 
 					});
 
@@ -61,9 +61,7 @@
 
 			off = function() {
 
-				$t
-					.css('background-position', '');
-
+				$t.children('video').css('inset', '0px');
 				$window
 					.off('scroll._parallax');
 
@@ -163,7 +161,7 @@
 							.text('')
 							.addClass('primary')
 							.appendTo($this);
-						
+
 						$x.attr('aria-label', $link.text());
 
 						$link = $link.add($x);

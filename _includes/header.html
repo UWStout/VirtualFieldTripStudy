@@ -14,16 +14,22 @@
     <ul class="links">
       {% for page in site.pages %}
         {% if page.layout == "home" %}
-          <li><a href="{{ "" | absolute_url }}/">{{ page.title }}
-            <img src="assets/images/HomeIcon.png" alt="" style="height: 55px;" margin-left="55px">
-          </a></li>
+          <li style="position: relative">
+            <a href="{{ "" | absolute_url }}/">
+              {{ page.title }}
+              <img src="assets/images/HomeIcon.png" alt="" style="height: 40px; position: absolute; bottom: 20px; right: 0px;">
+            </a>
+          </li>
         {% endif %}
       {% endfor %}
       {% for page in site.html_pages %}
         {% if page.layout != "home" and page.title != "Elements" and page.nav-menu == true %}
-            <li><a href="{{ page.url | absolute_url }}">{{ page.title }}
-              <img src="{{ page.menuIcon | absolute_url }}" alt="" style="height: 55px;" margin-left="55px">
-            </a></li>
+            <li style="position: relative">
+              <a href="{{ page.url | absolute_url }}">
+                {{ page.title }}
+                <img src="{{ page.menuIcon | absolute_url }}" alt="" style="height: 40px; position: absolute; bottom: 20px; right: 0px;">
+              </a>
+            </li>
         {% endif %}
       {% endfor %}
     </ul>
