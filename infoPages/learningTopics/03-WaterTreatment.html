@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<!--
+Forty by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+  <title>
+    
+      Water Treatment |
+    
+    Thermodynamics Virtual Field Trip
+  </title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+  <link rel="icon" type="image/x-icon" href="/VirtualFieldTripStudy/assets/images/favicon.ico">
+  <!--[if lte IE 8]><script src="/VirtualFieldTripStudy/assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="/VirtualFieldTripStudy/assets/css/main.css"/>
+  <!--[if lte IE 9]><link rel="stylesheet" href="/VirtualFieldTripStudy/assets/css/ie9.css" /><![endif]-->
+  <!--[if lte IE 8]><link rel="stylesheet" href="/VirtualFieldTripStudy/assets/css/ie8.css" /><![endif]-->
+
+  
+
+  <style>
+    .invisible-button {
+      position: absolute;
+      color: transparent;
+      border-radius: 6px;
+      background-color: transparent;
+      cursor: pointer;
+      overflow: hidden;
+      font-size: 6pt;
+      transition: border-color 0.3s ease;
+      border: 2px dashed transparent;
+    }
+
+    .invisible-button:hover {
+      border-color: slategray;
+    }
+
+    .invisible-button.vertical {
+      transform-origin: top left;
+      transform: rotate(-90deg);
+    }
+
+    .invisible-button.vertical-right {
+      transform-origin: top right;
+      transform: rotate(-90deg);
+    }
+
+    .ui-tabs-nav {
+      background-color: rgb(36, 41, 67);
+      border: 0px;
+      padding: 0;
+      text-align: center;
+    }
+
+    a.ui-tabs-anchor {
+      transition: all 0.3s ease;
+    }
+
+    li:not(.ui-state-active) a.ui-tabs-anchor:hover {
+      background-color: #9bf1ff !important;
+      color: #454545 !important;
+    }
+
+    li.ui-state-active a.ui-tabs-anchor:hover {
+      background-color: #007fff !important;
+      color: white !important;
+    }
+  </style>
+
+  
+
+  
+  <style>
+    .floatingOverlay {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 0%;
+      height: 0%;
+      margin: 0px;
+      padding: 0px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    #overlayCloseButton {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      display: none;
+      z-index: 1;
+      background-color: rgb(42, 47, 74);
+    }
+  </style>
+  
+</head>
+
+
+    <body>
+    <script type="text/javascript">document.body.classList.add("is-loading");</script>
+
+    <!-- Wrapper -->
+<div id="wrapper">
+
+  <!-- Header -->
+  <header id="header">
+    <a href="https://uwstout.github.io/VirtualFieldTripStudy/" class="logo"><strong>Thermodynamics Virtual Field Trip</strong><!-- <span>[An Xcel Energy Foundation Grant Recipient]</span>--></a>
+    <nav>
+      <a href="#menu">Menu</a>
+    </nav>
+  </header>
+
+  <!-- Menu -->
+  <nav id="menu">
+    <ul class="links">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li style="position: relative">
+            <a href="https://uwstout.github.io/VirtualFieldTripStudy/">
+              Home
+              <img src="assets/images/HomeIcon.png" alt="" style="height: 40px; position: absolute; bottom: 20px; right: 0px;">
+            </a>
+          </li>
+        
+      
+        
+      
+      
+        
+            <li style="position: relative">
+              <a href="https://uwstout.github.io/VirtualFieldTripStudy/infoPages/01-FacilityOverview.html">
+                Facility Overview
+                <img src="https://uwstout.github.io/VirtualFieldTripStudy/assets/images/FacilityOverviewIcon.png" alt="" style="height: 40px; position: absolute; bottom: 20px; right: 0px;">
+              </a>
+            </li>
+        
+      
+        
+      
+        
+      
+        
+            <li style="position: relative">
+              <a href="https://uwstout.github.io/VirtualFieldTripStudy/infoPages/02-LearningMaps.html">
+                Learning Opportunities
+                <img src="https://uwstout.github.io/VirtualFieldTripStudy/assets/images/LearningOpportunitiesIcon.png" alt="" style="height: 40px; position: absolute; bottom: 20px; right: 0px;">
+              </a>
+            </li>
+        
+      
+        
+            <li style="position: relative">
+              <a href="https://uwstout.github.io/VirtualFieldTripStudy/infoPages/03-Assessments.html">
+                Assessments
+                <img src="https://uwstout.github.io/VirtualFieldTripStudy/assets/images/AssessmentsIcon.png" alt="" style="height: 40px; position: absolute; bottom: 20px; right: 0px;">
+              </a>
+            </li>
+        
+      
+        
+      
+        
+      
+        
+            <li style="position: relative">
+              <a href="https://uwstout.github.io/VirtualFieldTripStudy/infoPages/04-FunFacts.html">
+                Fun Facts
+                <img src="https://uwstout.github.io/VirtualFieldTripStudy/assets/images/FunFactsIcon.png" alt="" style="height: 40px; position: absolute; bottom: 20px; right: 0px;">
+              </a>
+            </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+            <li style="position: relative">
+              <a href="https://uwstout.github.io/VirtualFieldTripStudy/infoPages/99-Navigation.html">
+                Site Navigation and Tips
+                <img src="https://uwstout.github.io/VirtualFieldTripStudy/assets/images/SiteNavigationAndTipsIcon.png" alt="" style="height: 40px; position: absolute; bottom: 20px; right: 0px;">
+              </a>
+            </li>
+        
+      
+        
+      
+        
+      
+    </ul>
+    <!-- <ul class="actions vertical">
+      <li><a href="#" class="button special fit">Get Started</a></li>
+      <li><a href="#" class="button fit">Log In</a></li>
+    </ul> -->
+  </nav>
+
+
+    <!-- Main -->
+    <div id="main" class="alt">
+
+      <!-- One -->
+      <section id="one">
+        <div class="inner">
+          <header class="major">
+            <h1>Water Treatment</h1>
+          </header>
+
+          
+            
+              <span class="image right" style="max-width: 50%;"><img src="/VirtualFieldTripStudy/assets/images/WaterTreatment.png" alt=""/></span>
+            
+          
+
+          <p>Just like a private home, water that comes in from the city needs some treatment. Private homes may utilize a water softener and a whole-home filter to remove contaminants and improve taste. In the heating plant, the water must be treated before it enters the boiler system or it could damage the pipes and equipment.</p>
+
+
+          
+            
+              <div style="clear: both"></div>
+            
+          
+        </div>
+      </section>
+
+      
+        
+          <!-- Two -->
+          <section id="two">
+            <div class="inner">
+              <h2 id="tour">Lear about water treatment</h2>
+              <p>Click below to explore the water treatment room and deaerators.
+</p>
+              <button class="panoTourButton-1 tourButton button big fit icon fa-vr-cardboard">
+                Tour Water Treatment
+              </button>
+              
+              <p style="margin-top: 20px; margin-bottom: 8px;">Look for the following Hotspots:</p>
+              <ul>
+                
+                  <li>Through the door in front of you when you start, by the large cylinders</li>
+                
+                  <li>Through the door and to your left by the chemical barrels</li>
+                
+                  <li>Up the stairs to your left (on the large green tank)</li>
+                
+              </ul>
+              
+            </div>
+          </section>
+        
+      
+
+      
+
+      <!-- Four -->
+      <section id="four">
+        <div class="inner">
+          <div class="row">
+              <div class="4u">
+                
+                <ul class="actions">
+                  <li><a href="/VirtualFieldTripStudy/infoPages/learningTopics/02-CentrifugalChillers.html" class="button prev">Prev Section</a></li>
+                </ul>
+                
+              </div>
+
+              <div class="4u" style="text-align: center;">
+                <ul class="actions">
+                  
+                    <li><a href="/VirtualFieldTripStudy/infoPages/02-LearningTopics.html" class="button icon fa-level-up">To Index</a></li>
+                  
+                </ul>
+            </div>
+
+              <div class="4u" style="text-align: right;">
+                
+                <ul class="actions">
+                  <li><a href="/VirtualFieldTripStudy/infoPages/learningTopics/04-CoolingTowers.html" class="button next">Next Section</a></li>
+                </ul>
+                
+              </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    
+      
+        <div id="panoTourRoot-1" class="floatingOverlay"></div>
+      
+    
+
+    
+
+      <!-- Page Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				
+					
+						<li>
+							<a href="https://github.com/UWStout" class="icon alt fa-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+								<span class="label">GitHub</span>
+							</a>
+						</li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+			</ul>
+			<ul class="copyright">
+				<li>&copy; 2023 UWStout Thermodynamics Virtual Field Trip Project</li>
+				<li>Site Template Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
+				<li>Site Jekyll integration: <a href="http://andrewbanchi.ch" target="_blank">Andrew Banchich</a></li>
+			</ul>
+		</div>
+	</footer>
+
+<!-- Close page wrapper (part of header.html) -->
+</div>
+
+<!-- Scripts -->
+<script src="https://uwstout.github.io/VirtualFieldTripStudy/assets/js/jquery.min.js"></script>
+<script src="https://uwstout.github.io/VirtualFieldTripStudy/assets/js/jquery.scrolly.min.js"></script>
+<script src="https://uwstout.github.io/VirtualFieldTripStudy/assets/js/jquery.scrollex.min.js"></script>
+<script src="https://uwstout.github.io/VirtualFieldTripStudy/assets/js/skel.min.js"></script>
+<script src="https://uwstout.github.io/VirtualFieldTripStudy/assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="https://uwstout.github.io/VirtualFieldTripStudy/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="https://uwstout.github.io/VirtualFieldTripStudy/assets/js/main.js"></script>
+<script src="https://uwstout.github.io/VirtualFieldTripStudy/assets/js/basil.min.js"></script>
+<script src="https://uwstout.github.io/VirtualFieldTripStudy/assets/js/tourProgress.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Add virtual tour support -->
+<script src="https://uwstout.github.io/VirtualFieldTripStudy/assets/js/virtualTour.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // 
+    {
+      // 
+      // Build enabled room array
+      const enabledRooms = [
+      // 
+      // 
+      ].filter(element => !!element)
+
+      // Build enabled hotSpot
+      const enabledHotSpots = [
+      // 
+      ].filter(element => !!element)
+
+      // Prepare the tour root element and config
+      const rootElement = document.getElementById('panoTourRoot-1')
+      const config = {
+        startingRoom: '',
+        initialYaw: parseFloat('0'),
+        disablePriority: 'false' === 'true',
+        enableClose: true,
+        enabledRooms: enabledRooms.length > 1 ? enabledRooms : [],
+        enabledHotSpots,
+        textColor: 'lightgrey',
+        backgroundColor: '#2a2f4a',
+        urlPrefix: ''
+      }
+
+      // Attach to all matching buttons
+      const panoButtons = document.querySelectorAll('.panoTourButton-1')
+      panoButtons.forEach(panoButton => {
+        const overrides = $(panoButton)?.data('overrides') ?? {}
+        attachVirtualTour(panoButton, rootElement, { ...config, ...overrides })
+      })
+    }
+    // 
+  })
+</script>
+
+
+
+
+
+  </body>
+
+</html>

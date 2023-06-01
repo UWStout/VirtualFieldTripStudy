@@ -1,0 +1,34 @@
+{
+    "name": "1S05_Refrigeration_Cycle",
+    "images": [{
+      "src": "1S0510-Refrigeration-Cycle-Picture1.png",
+      "caption": "The Four Processes of a Typical Vapor Compression Refrigeration Cycle"
+    },
+    {
+      "src": "1S0510-Refrigeration-Cycle-Picture2.png",
+      "caption": "Vapor Compression Refrigeration"
+    },
+    {
+      "src": "1S0510-Refrigeration-Cycle-Picture3.jpg",
+      "caption": "Distinctions Between a Refrigerator and a Heat Pump"
+    },
+    {
+      "src": "1S0510-Refrigeration-Cycle-Picture4.png",
+      "caption": "Equation for the Efficiency of a Refrigerator or Heat Pump"
+    },
+    {
+      "src": "1S0510-Refrigeration-Cycle-Picture5.png",
+      "caption": "Carnot Refrigerator Cycle"
+    }],
+    "height": 774,
+    "audio": {
+        "src": "1S0520-RefrigerationCycle",
+        "slideTiming": {
+          "0": "0",
+          "1": "7",
+          "2":"30",
+          "3":"44",
+          "4":"57"
+        }
+    }
+}
